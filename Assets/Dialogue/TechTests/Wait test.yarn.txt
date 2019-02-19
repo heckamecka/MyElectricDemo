@@ -1,0 +1,18 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+<<dgmode npc>>
+This is a simple wait command test. First, let's wait for two seconds before the next line with "wait 2.0"
+<<wait 2.0>>
+Now, the same thing but with no decimal point; "wait 2"
+<<wait 2>>
+One-digit fraction, 0.5s:
+<<wait 0.5>>
+Longer wait, 5s
+<<wait 5>>
+Now, let's inline wait: 
+1.0s, {{wait 1.0}}1.5s, {{wait 1.5}}2s, {{wait 2}}5s, {{wait 5}}, and wait 3.564314586s {{wait 3.564314586}}
+Have a good one, everyone!
+===

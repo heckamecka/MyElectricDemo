@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8ab5051c0aada49b5f3585ced7f998, type: 3}
+  m_Name: Pier
+  m_EditorClassIdentifier: 
+  _locationName: Pier
+  _sceneDataList:
+  - {fileID: 11400000, guid: 0043849c8c4846b4d917a99147746495, type: 2}
+  - {fileID: 11400000, guid: dfba891ba10c997469ddc71313f3a4de, type: 2}

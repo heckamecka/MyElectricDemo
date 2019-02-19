@@ -1,0 +1,32 @@
+title: Start
+tags: 
+colorID: 2
+position: -3062,-3619
+---
+<<setnpc jansky right>>
+<<setguppy none>>
+<<setspeaker none>>
+Jansky looms, a pale white figure robed in ethernet cables, eyes fizzling dim red with exhaustion.
+The Marbloon sea swirls below, a bubblegum mess of clouds and oil and ooze. 
+The blood and sweat of a wounded world. 
+setnpc tyson, setspeaker none
+...The remarkably shorter Tyson stands beside her. 
+You might describe him as 'shrimpy,' 
+if you had both a penchant for aquatic punnery and no sense of diplomacy whatsoever. 
+<<setnpc fermi left>>
+<<setspeaker none>>
+<big>SUDDENLY</big> a jellybot in a bright pink duster bursts through the door. 
+They rattle when they walk, like a tin can full of peas. 
+<<setnpc fermi>>
+<shake>President Jansky!</shake>
+<<setspeaker jansky>>
+Fermi. Thank you for coming in on such short notice. Happy anniversary, by the way.
+<<setspeaker fermi>>
+Have you had a chance to review my proposal?
+<<setspeaker none>>
+Janksy steeples her fingers. 
+<<setspeaker Jansky>>
+You can't keep secrets from me, Fermi. 
+I am, as they say, Extremely Online. 
+
+===

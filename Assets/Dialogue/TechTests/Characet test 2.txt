@@ -1,0 +1,27 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+<<dgmode npc>>
+<<setnpc none>>
+<<setguppy none>>
+Let's change some characters and backgrounds! First things first, we're going to go to fermi:
+<<setnpc fermi>>
+Wow, look at Fermi go! Next up, here are some inline character changes
+Like the friendly {{setnpc knifecrab}} knifecrab.
+Let's just go back to fermi for one{{setnpc fermi}} sec. 
+And now, let's make fermi {{setnpc fermismirk}} smirk!
+Anyway, time to remove the npc:
+<<setnpc none>>
+And back to fermi, being {{setnpc fermishock}}shocked.
+<<setnpc fermi left>>
+<<setspeaker none>>
+Let's put fermi on the left
+And make them shocked{{setnpc fermishock}} again.
+And make them {{setnpc fermifear}}scared
+Let's put the guppy on the screen{{setguppy}}
+And put knifecrab instead of guppy{{setnpc knifecrab left}}
+And on the right {{setnpc knifecrab right}} with guppy back on {{setguppy}}
+That's all i have folks! ciao
+===

@@ -1,0 +1,18 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+WOOOOO LETS GO TEST HADFIELD'S NEWS BAMMER
+<<newson test>>
+NEATO NOW LETS CHANGE THE NAME OF THE UHHH INT- INTER....THE PERSON WHO IS BEING INTERVIEWED
+<<newsname uhhh>>
+TITLE CHANGE {{newstitle absolute icon}}NEXT 
+NOW FO DA TOPIC {{newstopic this is a little too much for me rn}}
+WE ALMOST DONE BOIS, JUST CLOSE THE THINGY
+<<newsoff>>
+<<wait 1.0>>
+AND NOW BACK ON TO SOMETHING DIFFERENT
+<<newson test2>>
+AND IF IT WORKED SO FAR WE DONE KIDS. BYZERS
+===

@@ -1,0 +1,42 @@
+title: Start
+tags: 
+colorID: 0
+position: 248,221
+---
+This is a test of guppy vs npc mode. 
+By default, we should start out in NPC mode and this text should be playing regardless of player input
+We are now going to go to player mode, in which the text should only play while the player is hovering over a node. Go ahead and choose Jemison: {{sbopen jJemison1}}.
+===
+title: jJemison1
+tags: 
+colorID: 0
+position: 461,219
+---
+<<dgmode player>>
+Now in guppy mode! This text should play while there is a node in agent status and should pause when there is no node in agent status
+<<jump npc1>>
+===
+title: npc1
+tags: 
+colorID: 0
+position: 678,215
+---
+<<dgmode npc>>
+Now we're back in NPC mode. Let's go back to player mode again {{sbopen jJemison2}}
+===
+title: jJemison2
+tags: 
+colorID: 0
+position: 895,212
+---
+<<dgmode player>>
+Okay! We're back to player mode. Finally, npc mode again: {{jump npc2}}
+===
+title: npc2
+tags: 
+colorID: 0
+position: 1122,211
+---
+<<dgmode npc>>
+Hope you have a great day!
+===

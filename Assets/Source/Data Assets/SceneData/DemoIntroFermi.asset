@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26190b1a3c5d14946a30ca0d8e4e924d, type: 3}
+  m_Name: DemoIntroFermi
+  m_EditorClassIdentifier: 
+  _sceneName: DemoIntroFermi
+  _shantyText: 'soulstuff cruft and
+
+    circuits frying,{{wait 1}}
+
+    we''ll live forever or we''ll
+
+    die trying.{{wait 0.9}}
+
+
+    watch this world tear us apart.{{wait 0.8}}
+
+    dismantle last,{{wait 0.5}}
+
+    my electric heart.{{wait 5}} '
+  _yarnScene: {fileID: 4900000, guid: 116137ce49048b043ab53020d14efbb8, type: 3}

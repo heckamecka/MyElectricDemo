@@ -1,0 +1,53 @@
+title: Start
+tags: 
+colorID: 0
+position: -38,364
+---
+<<dgmode npc>>
+Some Dialogue, {{sbopen jJemison0}}This is a time-based Static Freeswitch Example. Select Jemison to get started!
+===
+title: cCooper1
+tags: 
+colorID: 0
+position: 471,158
+---
+You have now switched to Cooper! Lorem ipsum dolor sit amet, consectetur adipiscing elit
+{{jump SubsetFork}}
+===
+title: aArmstrong1
+tags: 
+colorID: 0
+position: 475,522
+---
+You have now switched to Armstrong! Lorem ipsum dolor sit amet, consectetur adipiscing elit
+{{jump SubsetFork}}
+===
+title: SubsetFork
+tags: 
+colorID: 0
+position: 756,348
+---
+We have now rejoined the main branch, and it's time to do another switch; in which only jemison and armstrong are available{{sbopen jJemison2 aArmstrong2}}. It's time to pick a character, folks! Let's go, let's go, let's goooooo!
+===
+title: jJemison2
+tags: 
+colorID: 0
+position: 1005,145
+---
+This is Jemison, again! Lorem ipsum dolor sit amet, consectetur adipiscing elit, etc, etc. We're done here.
+===
+title: aArmstrong2
+tags: 
+colorID: 0
+position: 1010,484
+---
+This is Armstrong, again! Lorem ipsum dolor sit amet, consectetur adipiscing elit. We're done here.
+===
+title: jJemison0
+tags: 
+colorID: 0
+position: 229,365
+---
+<<dgmode player>>
+Jemison Dialogue, Jemison Dialogue, Freeswitch about to open {{sbopen cCooper1 aArmstrong1}} now the freeswitch is open, so it should be assumed that this text is not guaranteed to be seen
+===

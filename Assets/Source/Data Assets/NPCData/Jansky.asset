@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3eae21aa8bfa2744b731aa25f0b3b53, type: 3}
+  m_Name: Jansky
+  m_EditorClassIdentifier: 
+  lookup: jansky
+  characterName: JANSKY
+  graphic: {fileID: 21300000, guid: 89e112f2bac677548980ba3f3e1635f4, type: 3}
+  faceOffset: {x: 57.7, y: 210}
+  defaultFace: {fileID: 21300000, guid: 2cb62cf018377ce46b0f72f3faae3026, type: 3}
+  faces:
+    keys:
+    - aghast
+    - patient
+    - plotting
+    - rage
+    - serene
+    - shock
+    - skeptical
+    - smug
+    - strained
+    - tired
+    values:
+    - {fileID: 21300000, guid: 645f3dc2beb5c704fa781f1f1aa5be72, type: 3}
+    - {fileID: 21300000, guid: 24e4e54ad2968c8429fc58b5de891dfa, type: 3}
+    - {fileID: 21300000, guid: b5045034b7d84af42b3ecab73cf66d1d, type: 3}
+    - {fileID: 21300000, guid: 3a45850520318b6499074860b40b77f8, type: 3}
+    - {fileID: 21300000, guid: 0be3dc77e45f5964c88a34bda8919035, type: 3}
+    - {fileID: 21300000, guid: c014fe4326f6e5f438cb6f046daf1d69, type: 3}
+    - {fileID: 21300000, guid: 2cb62cf018377ce46b0f72f3faae3026, type: 3}
+    - {fileID: 21300000, guid: 5fe9d5b2ab7a6144ab0962c39ab0ed45, type: 3}
+    - {fileID: 21300000, guid: 9fa266d99cebaec49a27278fb0259f25, type: 3}
+    - {fileID: 21300000, guid: c638ecf96404a4241a73a629b4585fcb, type: 3}

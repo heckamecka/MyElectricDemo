@@ -1,0 +1,80 @@
+title: Start
+tags: 
+colorID: 0
+position: 277,288
+---
+<<dgmode npc>>
+<<setguppy neutral>>
+This is a test of switchbreaker-friendly jumps. But first, here is a normal square-brace jump:
+[[1]]
+===
+title: 1
+tags: 
+colorID: 0
+position: 601,286
+---
+That worked! However, the double brace jump doesn't work so well with our switchbreaker mechanic, so instead we are going to use the double curly-brace jump. 
+Here's one to get started: {{jump 2}}
+===
+title: 2
+tags: 
+colorID: 0
+position: 894,281
+---
+We've arrived! Now, time to test the interaction between an sbopen and a meh-flavored jump. 
+We are going to provide you with a switchbreaker opening, and then a jump -- you should be able to choose the switchbreaker option now and skip the jump: {{jump JumpSequence}}
+===
+title: aDidNotJump
+tags: 
+colorID: 0
+position: 1413,206
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+After choosing armstrong, you should see this text!
+<<dgmode npc>>
+We are now going to loop back to the last juncture so you can try waiting for the jump, but the test sequence is now over.
+<<jump JumpSequence>>
+===
+title: didJump
+tags: 
+colorID: 0
+position: 1414,453
+---
+You should see this text if you did not choose armstrong, and only yielded to the jump. 
+We are now going to loop back to the last juncture so you can try using the switchbreaker before the jump, but the test sequence is now over.
+<<jump JumpSequence>>
+===
+title: JumpSequence
+tags: 
+colorID: 0
+position: 1130,276
+---
+<<dgmode npc>>
+<<setguppy neutral>>
+Switchbreaker is opening, now! {{sbopen jDidNotJump cDidNotJump aDidNotJump}} The switchbreaker is now open. You can choose a character to skip over the jump, or just wait for this text to be over to let the jump happen. Three! Two! One! {{sbclose}}{{jump didJump}}
+===
+title: cDidNotJump
+tags: 
+colorID: 0
+position: 1410,-33
+---
+<<dgmode player>>
+<<setguppy cooper>>
+After choosing cooper, you should see this text!
+<<dgmode npc>>
+We are now going to loop back to the last juncture so you can try waiting for the jump, but the test sequence is now over.
+<<jump JumpSequence>>
+===
+title: jDidNotJump
+tags: 
+colorID: 0
+position: 1404,-269
+---
+<<dgmode player>>
+<<setguppy jemison>>
+After choosing jemison, you should see this text!
+<<dgmode npc>>
+We are now going to loop back to the last juncture so you can try waiting for the jump, but the test sequence is now over.
+<<jump JumpSequence>>
+===

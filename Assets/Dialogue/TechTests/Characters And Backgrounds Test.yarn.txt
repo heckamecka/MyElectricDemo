@@ -1,0 +1,29 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+<<dgmode npc>>
+<<setnpc none>>
+<<setguppy none>>
+Let's change some characters and backgrounds! First things first, we're going to go to fermi:
+<<setnpc fermi>>
+Wow, look at Fermi go! Next up, here are some inline character changes; the friendly {{setnpc orca-friendly}} orca, and then also the spindly {{setnpc orca-spindly}} orca.
+Next up, the guppy. {{speed slow}} We'll start with the neutral guppy{{setguppy neutral}}, jemison{{setguppy jemison}},  cooper{{setguppy cooper}}, and armstrong{{setguppy armstrong}}. {{speed medium}} Pretty nice!
+Anyway, time to remove the npc:
+<<setnpc none>>
+And now, the guppy:
+<<setguppy none>>
+Now, let's do backgrounds. First up, underwater
+<<setbg underwater>>
+Great. Now, let's do some inline backgrounds, starting with {{setbg pool}}this nice pool, moving on to {{setbg arbys}} Arbys, and finally settling on {{setbg waffle-night-0}}waffle house.
+<<setbg default>>
+Anyway, all done!
+.....
+<<setnpc fermi>>
+....
+<<setbg waffle-night-1>>
+...
+<<setbg waffle-menu>>
+yeah, I'll have, {{speed slow}} uhhhhhhhhhhhhhhhhhhhhhhhhh
+===

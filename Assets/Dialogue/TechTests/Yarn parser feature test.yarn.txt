@@ -1,0 +1,61 @@
+title: Start
+tags: 
+colorID: 0
+position: 163,252
+---
+Line 1
+<<command 1a>>
+Line 2
+<<double command 1a>>
+<<double command 1b>>
+Line 3
+<<triple command 1a>>
+<<triple command 1b>>
+<<triple command 1c>>
+Line 4
+<<command 2>>
+Line 5sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Line 6
+<<double command 2a>>
+<<double command 2b>>
+[[Second]]
+===
+title: Second
+tags: 
+colorID: 0
+position: 500,263
+---
+Henlo
+This is my attempt to do an inline <<inline command 1a>> command let's see how it goes
+This should be two <<inline 2a>> inline <<inline 2b>> commands
+This is my attempt to do a [[Inline Connection|Third]] Let's see if it works?
+This is the line after the inline connection
+===
+title: Third
+tags: 
+colorID: 0
+position: 795,253
+---
+This is my attempt to do an Inline Jump Let's see if the [[Inline Jump]] text after this jump works
+===
+title: Inline Jump
+tags: 
+colorID: 0
+position: 1078,248
+---
+This is the inline jump destination
+===
+title: Node11
+tags: 
+colorID: 0
+position: 724,519
+---
+Empty Text
+===
+title: Node12
+tags: 
+colorID: 0
+position: 280,522
+---
+
+===

@@ -1,0 +1,670 @@
+title: Start
+tags: 
+colorID: 0
+position: -572,-1796
+---
+<<setnpc fermihappy>>
+<<dgmode npc>>
+Welcome to your new tank little fishies! How’re you acclimating?{{wait 1.0}}
+<<setnpc fermismug>>
+HelloooOOooo? {{sbopen jemison1}} Anyone home?
+===
+title: jemison1
+tags: 
+colorID: 0
+position: -319,-1548
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+Please do{{sbopen cooper1}} not-
+===
+title: armstrong1
+tags: 
+colorID: 0
+position: -312,-1088
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+the GLASS!!!
+[[NPC2]]
+===
+title: cooper1
+tags: 
+colorID: 0
+position: -314,-1324
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+T-t-tap {{sbopen armstrong1}}on...
+===
+title: NPC2
+tags: 
+colorID: 0
+position: -39,-1782
+---
+<<dgmode npc>>
+<<setnpc fermismirk>>
+Take a second to find your footing.
+<<setnpc fermihappy>>
+Multicore cohabitation can be disorienting. {{wait 1.0}}Or so I’m {{sbopen jemison1.1 cooper1.1 armstrong1.1}}told.
+
+
+
+===
+title: jemison2
+tags: 
+colorID: 0
+position: 237,-1552
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+I’m Jemison. Jem, if I’m feeling chummy.
+I can disassemble and reassemble a person in 10 minutes flat,
+I once performed surgery on my own fuel pump,
+and I know 6 different ways to disable a bot with a paperclip, a fridge magnet,
+and a low-tensile rubber band.
+One of those things was a lie, but you’ll never know which.
+I am… or rather, I WAS, a forensic analyst with HCP{{sbopen cooper2.1 armstrong2.1}}...
+===
+title: NPC3
+tags: 
+colorID: 0
+position: 812,-1798
+---
+<<dgmode npc>>
+<<setnpc fermihappy>>
+My beautiful Aquaknights! I'm so proud.
+You’ll have plenty of time to get acquainted shoreside.
+<<setnpc fermismirk>>
+.{{wait 0.1}}.{{wait 0.1}}.{{wait 0.1}}
+<<setnpc fermihappy>>
+<<shakenpc 20>>
+POP QUIZ!!!
+What makes a {{sbopen jemison3 cooper3 armstrong3}}team?
+===
+title: armstrong3
+tags: 
+colorID: 0
+position: 951,-1070
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+The power of friendship!
+[[NPC4]]
+===
+title: NPC4
+tags: 
+colorID: 0
+position: 1236,-1797
+---
+<<dgmode npc>>
+<<setnpc fermishock>>
+Well, yes, that. But also-
+<<setnpc fermihappy>>
+<<shakenpc 20>>
+A COHESIVE DESIGN SCHEME!
+Uniforms. Insignias. Special moves and secret handshakes!
+This isn’t just any investigative unit, this is a highly specialized,
+<<setnpc fermismug>>
+(if tragically underfunded)
+<<setnpc fermihappy>>
+seafaring, slime-crime crew.
+AND I EXPECT YOU TO ACT LIKE {{playaudio micscreech}}IT!!!
+<<setnpc fermifear>>
+<<shakenpc 40>>
+hngghg{{sbopen jemison4 cooper4 armstrong4}}.{{wait 0.1}}.{{wait 0.1}}.
+===
+title: armstrong4
+tags: 
+colorID: 0
+position: 1448,-1078
+---
+<<setguppy armstrong>>
+<<setface suspcious>>
+<<dgmode player>>
+Woah, easy now boss-bot!
+[[NPC5]]
+===
+title: NPC7
+tags: 
+colorID: 0
+position: 2526,-1782
+---
+Aquaknight code pt. I: KRYPTOS DICTUM{{sbopen jemison6 cooper6 armstrong6}}!!!
+===
+title: jemison7
+tags: 
+colorID: 0
+position: 3424,-1539
+---
+<<setdance idle>>
+[[NPC9]]
+===
+title: cooper7
+tags: 
+colorID: 0
+position: 3424,-1300
+---
+<<setdance idle>>
+[[NPC9]]
+===
+title: armstrong7
+tags: 
+colorID: 0
+position: 3423,-1063
+---
+<<setdance idle>>
+[[NPC9]]
+===
+title: NPC8
+tags: 
+colorID: 0
+position: 3072,-1773
+---
+Ridiculous things are more common than they are likely,
+which leads us to believe that our universe favors the strange and the interconnected.
+Never assume it is the simplest {{sbopen jemison7 cooper7 armstrong7}}explanation.
+===
+title: armstrong8
+tags: 
+colorID: 0
+position: 3905,-1071
+---
+<<setdance basic>>
+[[NPC10]]
+===
+title: NPC9
+tags: 
+colorID: 0
+position: 3671,-1774
+---
+Aquaknight code pt. II: CONFLICTUS DETHRAS{{sbopen jemison8 cooper8 armstrong8}}!!!
+===
+title: jemison8
+tags: 
+colorID: 0
+position: 3889,-1524
+---
+<<setdance basic>>
+[[NPC10]]
+===
+title: NPC10
+tags: 
+colorID: 0
+position: 4116,-1755
+---
+Knighting right means encouraging community
+and de-escalating conflict, whenever {{sbopen jemison9 cooper9 armstrong9}}possible!
+
+===
+title: jemison9
+tags: 
+colorID: 0
+position: 4323,-1518
+---
+<<setdance idle>>
+[[NPC11]]
+===
+title: NPC11
+tags: 
+colorID: 0
+position: 4565,-1748
+---
+Aquaknight code pt. III: HONORUS RICHTUS{{sbopen jemison10 cooper10 armstrong10}}!!!
+===
+title: NPC12
+tags: 
+colorID: 0
+position: 4982,-1742
+---
+Give it your all!
+Protect the weak and be critical of the powerful!
+{{wait 1.0}}
+[[NPC13]]
+===
+title: cooper2
+tags: 
+colorID: 0
+position: 241,-1331
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+<<play audio carlock>>
+Oh, hey! Uh!! I’m Cooper. Just a cool dude...
+with cool hobbies like, uh.
+Hacky sack? And following the rules?...
+Temporary tattoos? And going to bed at a reasonable hour?
+...
+<<bumpguppy 20>>
+I’m a vehicle technician. I maintenance, uh, subs and {{sbopen jemison2.1 armstrong2.3}}shuttles.
+===
+title: armstrong2
+tags: 
+colorID: 0
+position: 245,-1086
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+What’s chilly gillies? My name’s Armstrong!!
+You might know me from my recent appearance on luckiest_skater_ever_vine.skatevines{{sbopen jemison2.3 cooper2.3}}.com.
+===
+title: cooper3
+tags: 
+colorID: 0
+position: 956,-1307
+---
+<<setguppy cooper>>
+<<setface confused>>
+<<dgmode player>>
+C-confidence and decisiveness?
+<<setface nervous>>
+No, wait, er… The ability to follow instructions?
+[[NPC4]]
+===
+title: jemison3
+tags: 
+colorID: 0
+position: 949,-1534
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+Equivalent skill and mutual respect.
+[[NPC4]]
+===
+title: jemison4
+tags: 
+colorID: 0
+position: 1456,-1548
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+Uh, boss?
+[[NPC5]]
+===
+title: cooper4
+tags: 
+colorID: 0
+position: 1447,-1314
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+A-are you ok?!
+[[NPC5]]
+===
+title: NPC6
+tags: 
+colorID: 0
+position: 2055,-1782
+---
+<<setnpc none>>
+<<setguppy none>>
+<<dgmode npc>>
+<<playmusic icbm 4>>
+<<setdance idle>>
+Stretch those legs, Aquaknights{{wait 1.0}}-
+You're a tin CAN not a tin {{sbopen jemison5 cooper5 armstrong5}}CAN'T!
+===
+title: cooper9
+tags: 
+colorID: 0
+position: 4316,-1278
+---
+<<setdance idle>>
+[[NPC11]]
+===
+title: armstrong9
+tags: 
+colorID: 0
+position: 4314,-1055
+---
+<<setdance idle>>
+[[NPC11]]
+===
+title: jemison10
+tags: 
+colorID: 0
+position: 4740,-1522
+---
+<<setdance advanced>>
+[[NPC12]]
+===
+title: cooper10
+tags: 
+colorID: 0
+position: 4739,-1287
+---
+<<setdance advanced>>
+[[NPC12]]
+===
+title: armstrong10
+tags: 
+colorID: 0
+position: 4742,-1053
+---
+<<setdance advanced>>
+[[NPC12]]
+===
+title: NPC13
+tags: 
+colorID: 0
+position: 5270,-1742
+---
+<<dgmode npc>>
+<<setdance none>>
+<<playmusic bossa 4>>
+<<setnpc fermismug>>
+<<setguppy neutral>>
+The, uh... remaining 100-pages-or-so are just legislative cruft Tyson threw in
+<<setnpc fermismirk>>
+about boating ordinances, littering fees…
+<<setnpc fermismug>>
+There’s an entire appendix just titled
+“Section 43: Fermi isn’t going to read this I don’t know why I even bother.”
+<<setnpc fermihappy>>
+Haha, that’s Tyson for ya.
+...
+<<setnpc fermishock>>
+<<shakenpc 40>>
+IF YOU PLEDGE TO UPHOLD THESE STATUTES,
+<<setnpc fermihappy>>
+then I declare you, here and today
+HONORARY AQUAKNIGHTS{{sbopen jemison20}}!!!
+===
+title: cooper2.1
+tags: 
+colorID: 0
+position: 400,-1307
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+<<play audio carlock>>
+Oh, hey! Uh!! I’m Cooper. Just a cool dude...
+with cool hobbies like, uh.
+Hacky sack? And following the rules?...
+Temporary tattoos? And going to bed at a reasonable hour?
+...
+<<bumpguppy 20>>
+I’m a vehicle technician. I maintenance, uh, subs and  {{sbopen armstrong2.2}}shuttles.
+===
+title: jemison2.1
+tags: 
+colorID: 0
+position: 397,-1527
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+I’m Jemison. Jem, if I’m feeling chummy.
+I can disassemble and reassemble a person in 10 minutes flat,
+I once performed surgery on my own fuel pump,
+and I know 6 different ways to disable a bot with a paperclip, a fridge magnet,
+and a low-tensile rubber band.
+One of those things was a lie, but you’ll never know which.
+I am… or rather, I WAS, a forensic analyst with HCP{{sbopen armstrong2.2}}...
+===
+title: armstrong2.1
+tags: 
+colorID: 0
+position: 387,-1043
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+What’s chilly gillies? My name’s Armstrong!!
+You might know me from my recent appearance on luckiest_skater_ever_vine.skatevines{{sbopen cooper2.2}}.com.
+===
+title: cooper2.2
+tags: 
+colorID: 0
+position: 495,-1261
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+<<play audio carlock>>
+Oh, hey! Uh!! I’m Cooper. Just a cool dude...
+with cool hobbies like, uh.
+Hacky sack? And following the rules?...
+Temporary tattoos? And going to bed at a reasonable hour?
+...
+<<bumpguppy 20>>
+I’m a vehicle technician. I maintenance, uh, subs and shuttles.
+[[NPC3]]
+===
+title: armstrong2.2
+tags: 
+colorID: 0
+position: 488,-1015
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+What’s chilly gillies? My name’s Armstrong!!
+You might know me from my recent appearance on luckiest_skater_ever_vine.skatevines.com.
+[[NPC3]]
+===
+title: jemison2.2
+tags: 
+colorID: 0
+position: 526,-1494
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+I’m Jemison. Jem, if I’m feeling chummy.
+I can disassemble and reassemble a person in 10 minutes flat,
+I once performed surgery on my own fuel pump,
+and I know 6 different ways to disable a bot with a paperclip, a fridge magnet,
+and a low-tensile rubber band.
+One of those things was a lie, but you’ll never know which.
+I am… or rather, I WAS, a forensic analyst with HCP...
+[[NPC3]]
+===
+title: armstrong2.3
+tags: 
+colorID: 0
+position: 583,-951
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+What’s chilly gillies? My name’s Armstrong!!
+You might know me from my recent appearance on luckiest_skater_ever_vine.skatevines{{sbopen jemison2.2}}.com.
+===
+title: jemison2.3
+tags: 
+colorID: 0
+position: 609,-1473
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+I’m Jemison. Jem, if I’m feeling chummy.
+I can disassemble and reassemble a person in 10 minutes flat,
+I once performed surgery on my own fuel pump,
+and I know 6 different ways to disable a bot with a paperclip, a fridge magnet,
+and a low-tensile rubber band.
+One of those things was a lie, but you’ll never know which.
+I am… or rather, I WAS, a forensic analyst with HCP{{sbopen cooper2.2}}...
+===
+title: cooper2.3
+tags: 
+colorID: 6
+position: 633,-1231
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+<<play audio carlock>>
+Oh, hey! Uh!! I’m Cooper. Just a cool dude...
+with cool hobbies like, uh.
+Hacky sack? And following the rules?...
+Temporary tattoos? And going to bed at a reasonable hour?
+...
+<<bumpguppy 20>>
+I’m a vehicle technician. I maintenance, uh, subs and  {{sbopen jemison2.2}}shuttles.
+===
+title: NPC5
+tags: 
+colorID: 0
+position: 1775,-1783
+---
+<<setnpc fermishock>>
+<<dgmode npc>>
+Ah, sorry. Old injuries acting up.
+Where was I?...
+<<setnpc fermismirk>>
+Uh. Yes! Right!
+<<setnpc fermihappy>>
+Look at you! You’re gorgeous!
+2 tons of reinforced mechtanium alloy, over 50 feet of rubber-coated vessel piping.
+You’re punch and goo and metal and heat and plastic
+and a god DAMN LOT of it at that!
+<<setnpc fermismirk>>
+Stand tall, Mariners! Be proud!
+<<shakenpc 20>>
+<<setnpc fermihappy>>
+Your employee training begins NOW!
+[[NPC6]]
+
+===
+title: NPC2.1
+tags: 
+colorID: 0
+position: 193,-1783
+---
+<<dgmode npc>>
+The three of you are gonna have to learn to share your body.
+<<setnpc fermismug>>
+Think of it like passing a frisbee. You all see and hear and smell through the same input sensors,
+but only one can speak or move at a time.
+You negotiate agency of your body using a special device called the Switchbreaker.
+.{{wait 0.1}}.{{wait 0.1}}.{{wait 0.1}}Go on! {{sbopen jemison2 cooper2 armstrong2}}Give it a try!
+===
+title: jemison1.1
+tags: 
+colorID: 0
+position: -36,-1547
+---
+<<setguppy jemison>>
+<<setface sad>>
+<<dgmode player>>
+I'm feeling... marginally less nimble than usual.
+[[NPC2.1]]
+===
+title: cooper1.1
+tags: 
+colorID: 0
+position: -29,-1315
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+Hello? Is this thing on?...
+[[NPC2.1]]
+===
+title: armstrong1.1
+tags: 
+colorID: 0
+position: -23,-1078
+---
+<<setguppy armstrong>>
+<<setface sad>>
+<<dgmode player>>
+I can't feel my feet...
+<<setface baffled>>
+Oh god. This thing has feet, right?
+[[NPC2.1]]
+===
+title: jemison5
+tags: 
+colorID: 0
+position: 2218,-1534
+---
+[[NPC7]]
+===
+title: cooper5
+tags: 
+colorID: 0
+position: 2218,-1310
+---
+[[NPC7]]
+===
+title: armstrong5
+tags: 
+colorID: 0
+position: 2219,-1079
+---
+[[NPC7]]
+===
+title: jemison6
+tags: 
+colorID: 0
+position: 2801,-1562
+---
+<<setdance basic>>
+[[NPC8]]
+===
+title: cooper6
+tags: 
+colorID: 0
+position: 2795,-1316
+---
+<<setdance basic>>
+[[NPC8]]
+===
+title: armstrong6
+tags: 
+colorID: 0
+position: 2797,-1069
+---
+<<setdance basic>>
+[[NPC8]]
+===
+title: cooper8
+tags: 
+colorID: 0
+position: 3891,-1299
+---
+<<setdance basic>>
+[[NPC10]]
+===
+title: jemison20
+tags: 
+colorID: 0
+position: 5508,-1490
+---
+<<setguppy jemison>>
+<<setface happy>>
+May metal twist and circuits fr{{sbopen cooper20}}y-
+===
+title: cooper20
+tags: 
+colorID: 0
+position: 5730,-1488
+---
+<<setguppy cooper>>
+<<setface happy>>
+Cross my wires, hope to d{{sbopen armstrong20}}ie.
+===
+title: armstrong20
+tags: 
+colorID: 0
+position: 5952,-1490
+---
+<<setguppy armstrong>>
+<<setface happy>>
+LOOK OUT MARBLUE! HERE WE COME! {{wait 1.0}}
+<<restart>>
+===

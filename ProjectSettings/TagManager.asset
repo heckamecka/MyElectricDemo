@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Radar
+  - JEMISON
+  - COOPER
+  - ARMSTRONG
+  - Letter
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcess
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: World Zone
+    uniqueID: 1135403679
+    locked: 0
+  - name: Text Zone
+    uniqueID: 2934183281
+    locked: 0
+  - name: Switcher Zone
+    uniqueID: 1259964849
+    locked: 0
+  - name: 
+    uniqueID: 4112047049
+    locked: 0

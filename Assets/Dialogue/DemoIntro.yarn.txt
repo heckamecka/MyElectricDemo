@@ -1,0 +1,282 @@
+[
+	{
+		"title": "Start",
+		"tags": "\r",
+		"body": "<<setnpc fermismug>>\r\n<<setguppy neutral>>\r\n<<dgmode npc>>\r\nWelcome to your new tank little fishies! \r\n<<setnpc fermihappy>>\r\nHow’re you acclimating?\r\n\r\n[[fermi1]]\r\n\r\n",
+		"position": {
+			"x": 3100,
+			"y": -577
+		},
+		"colorID": 6
+	},
+	{
+		"title": "NPC5",
+		"tags": "",
+		"body": "<<dgmode npc>>\nNEWT: Have you come to the right stall! I’ve got your catch if you’ve got the scratch. \nNEWT: Fish oil ointment for squeaky joints! \nNEWT: Whale blubber wax that’ll have you shining from assie to chassis! \nNEWT: Maybe I can interest you in some metal-blister butter? Cool on carbuncles hard on barnacles!!{{sbopen j}}\n\n[[j|Jemison5]]\n",
+		"position": {
+			"x": 1153,
+			"y": -279
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NPC6",
+		"tags": "",
+		"body": "<<dgmode npc>>\nNEWT: Not yet, you don’t! \nNEWT: But after I dump this tankard of eel bile into the reservoir, everyone will be clamoring musseling scalloping for my sweet salves. \nNEWT: That’s supply and demand, my friend{{sbopen jc}}\n\n[[j|Jemison6]]\n[[c|Cooper6]]\n",
+		"position": {
+			"x": 1392,
+			"y": -281
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NPC7",
+		"tags": "",
+		"body": "NEWT: Joking, of course! Loosen up, copper{{sbopen c}}\r\n\r\n[[c|Cooper7]]\r\n",
+		"position": {
+			"x": 1639,
+			"y": -282
+		},
+		"colorID": 0
+	},
+	{
+		"title": "fermi1",
+		"tags": "",
+		"body": "<<bumpnpc 20>>\nHelloooooooo?Anyone home{{sbopen jemison1}}?...\n\n[[jemison1]] \n\n",
+		"position": {
+			"x": 3390,
+			"y": -576
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison1",
+		"tags": "",
+		"body": "<<setguppy jemison>>\n<<dgmode guppy>>\nPlease do not{{sbopen cooper1}}-\n\n[[cooper1]]\n",
+		"position": {
+			"x": 3648,
+			"y": -354
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper1",
+		"tags": "",
+		"body": "<<setguppy cooper>>\n<<dgmode guppy>>\n T-t-tap!{{sbopen armstrong1}}!!\n\n[[armstrong1]]\n",
+		"position": {
+			"x": 3656,
+			"y": -119
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong1",
+		"tags": "",
+		"body": "<<setguppy armstrong>>\n<<dgmode guppy>>\nON THE GLASS!!!\n\n[[fermi2]]\n",
+		"position": {
+			"x": 3661,
+			"y": 113
+		},
+		"colorID": 0
+	},
+	{
+		"title": "fermi2",
+		"tags": "",
+		"body": "<<dgmode npc>>\r\nTake a second to find your footing.\r\nMulticore cohabitation can be disorienting. {{wait 1}}Or so I’m told. \r\nThe three of you are gonna have to learn to share your {{sbopen jemison2 cooper2 armstrong2}}body. \r\n...\r\n\r\n[[jemison2]]\r\n[[cooper2]]\r\n[[armstrong2]]\r\n",
+		"position": {
+			"x": 3886,
+			"y": -578
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison2",
+		"tags": "",
+		"body": "<<setguppy jemison>>\n<<dgmode guppy>>\nI feel marginally less nimble than usual. \n\n[[fermi3]]",
+		"position": {
+			"x": 4119,
+			"y": -364
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper2",
+		"tags": "",
+		"body": "<<setguppy cooper>>\n<<dgmode guppy>>\nI can't feel my feet.\n...Oh, god. This thing has feet, right?\n\n[[fermi3]]",
+		"position": {
+			"x": 4123,
+			"y": -134
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong2",
+		"tags": "",
+		"body": "<<setguppy armstrong>>\n<<dgmode guppy>>\nHEY THERE MY NAME'S ARMSTRONG AND OH GOD I MAde myself dizzy.\nTechnical difficulties. Please stand by. \n\n[[fermi3]]",
+		"position": {
+			"x": 4123,
+			"y": 106
+		},
+		"colorID": 0
+	},
+	{
+		"title": "fermi3",
+		"tags": "",
+		"body": "<<dgmode npc>>\nThink of it like passing a frisbee.\nYou all see and hear and smell through the same input sensors, \nbut only one can speak or move at a time.\nYou negotiate agency over the body through a device called the Switchbreaker-\nTry it out! {{sbopen jemison3 cooper3 armstrong3}} Introduce yourselves!\n\n[[jemison3]]\n[[cooper3]]\n[[armstrong3]]",
+		"position": {
+			"x": 4381,
+			"y": -572
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison3",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy jemison>>\r\njemison intro {{sbopen cooper3.1 armstrong3.1}} here\r\n\r\n[[cooper3.1]]\r\n[[armstrong3.1]]",
+		"position": {
+			"x": 4600,
+			"y": -355
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper3",
+		"tags": "",
+		"body": "<<dgmode guppy>>\n<<setguppy cooper>>\ncooper intro {{sbopen jemison3.3 armstrong3.3}} here\n\n[[jemison3.3]]\n[[armstrong3.3]]",
+		"position": {
+			"x": 4603,
+			"y": -128
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong3",
+		"tags": "",
+		"body": "<<dgmode guppy>>\n<<setguppy armstrong>>\narmstrong intro {{sbopen jemison3.4 cooper3.4}} here\n\n[[jemison3.4]]\n[[cooper3.4]]",
+		"position": {
+			"x": 4600,
+			"y": 102
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong3.1",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy armstrong>>\r\ncooper intro {{sbopen cooper3.2}} here\r\n\r\n[[cooper3.2]]",
+		"position": {
+			"x": 4844,
+			"y": 100
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper3.1",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy cooper>>\r\ncooper intro {{sbopen armstrong3.2}} here\r\n\r\n[[armstrong3.2]]",
+		"position": {
+			"x": 4844,
+			"y": -129
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong3.2",
+		"tags": "",
+		"body": "<<dgmode guppy>>\n<<setguppy armstrong>>\narmstrong intro here\n\n[[fermi4]]",
+		"position": {
+			"x": 5067,
+			"y": 106
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper3.2",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy cooper>>\r\ncooper intro here\r\n\r\n[[fermi4]]",
+		"position": {
+			"x": 5068,
+			"y": -126
+		},
+		"colorID": 0
+	},
+	{
+		"title": "fermi4",
+		"tags": "",
+		"body": "<<dgmode npc>>\nYou’ll have plenty of time to get acquainted shoreside.\nIn the meantime...{{wait 1.0}}\n<<shakenpc 20>>\nPOP QUIZ!!!\nWhat makes a team?!",
+		"position": {
+			"x": 5765,
+			"y": -587
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison3.3",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy jemison>>\r\ncooper intro {{sbopen armstrong3.2}} here\r\n\r\n[[armstrong3.2]]",
+		"position": {
+			"x": 5295,
+			"y": -359
+		},
+		"colorID": 0
+	},
+	{
+		"title": "armstrong3.3",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy armstrong>>\r\ncooper intro {{sbopen jemison3.2}} here\r\n\r\n[[jemison3.2]]",
+		"position": {
+			"x": 5290,
+			"y": 109
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison3.2",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy jemison>>\r\njemison intro here\r\n\r\n[[fermi4]]",
+		"position": {
+			"x": 5075,
+			"y": -354
+		},
+		"colorID": 0
+	},
+	{
+		"title": "jemison3.4",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy jemison>>\r\njemison intro {{sbopen cooper3.2}} here\r\n\r\n[[cooper3.2]]",
+		"position": {
+			"x": 5516,
+			"y": -357
+		},
+		"colorID": 0
+	},
+	{
+		"title": "cooper3.4",
+		"tags": "",
+		"body": "<<dgmode guppy>>\r\n<<setguppy cooper>>\r\ncooper intro {{sbopen jemison3.2}} here\r\n\r\n[[jemison3.2]]",
+		"position": {
+			"x": 5518,
+			"y": -130
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Jemison5",
+		"tags": "",
+		"body": "<<setguppy jemison>>\r\nJEMISON: We don’t have carbuncles. \r\n\r\n[[NPC6]]\r\n",
+		"position": {
+			"x": 1156,
+			"y": -41
+		},
+		"colorID": 0
+	},
+	{
+		"title": "NPC4",
+		"tags": "",
+		"body": "<<dgmode npc>>\nNEWT: Ah!! Well then! If you aint here to bust you must be here to {{sbopen jca}}barter!\n{{wait 5}}\n\n[[j|Jemison]]\n[[c|Cooper]]\n[[a|Armstrong]]\n\n",
+		"position": {
+			"x": 907,
+			"y": -279
+		},
+		"colorID": 0
+	}
+]

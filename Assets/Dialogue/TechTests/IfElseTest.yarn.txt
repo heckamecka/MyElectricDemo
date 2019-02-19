@@ -1,0 +1,39 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+i've been coding for 2 days without once testing. lets see how this goes
+<<set testbool = true>>
+set testbool = true
+<<set testbool2 = true>>
+set testbool2 = true
+<<if testbool>>
+if testbool
+<<elseif testbool2>>
+elseif testbool2
+<<else>>
+else
+<<endif>>
+endif
+<<set lol = 1>>
+lol set to 1
+<<printsave>>
+<<set lol = lol+1>>
+lol set to lol +1
+<<set lol = lol-2>>
+lol set to lol -2
+<<set lol = lol+4>>
+lol set to lol+4
+<<set ortrue = true||false>>
+ortrue set to true||false
+<<set andfalse = true&&false>>
+set andfalse = true&&false
+<<set getdataandfalse = andfalse && false>>
+set getdataandfalse = andfalse && false
+<<set nottest = !false>>
+set nottest = !false
+<<printsave>>
+we've just dumped all the save data into the unity print log
+test ended yo cya
+===

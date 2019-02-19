@@ -1,0 +1,13 @@
+title: Start
+tags: 
+colorID: 0
+position: 332,273
+---
+<<dgmode npc>>
+This is a test of using text speeds with custom, per-character deltas.
+This sentence contains only alpha characters and should go rather quickly
+This, sentence, uses, plenty, of, commas, which should each come with a, small, pause
+This sentence! uses. a collection? of! sentence terminators which! should? each. come! with! a larger pause
+This      sentence        has     a bunch of unecessary   whitespace,   which should go       lickety-split
+This sentence... uses a bunch???? of sentence terminators!!!!!!! in a row and is probably????? a pain in the ass to read
+===

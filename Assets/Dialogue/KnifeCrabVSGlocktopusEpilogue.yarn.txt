@@ -1,0 +1,476 @@
+title: Start
+tags: 
+colorID: 0
+position: 537,359
+---
+<<dgmode npc>>
+<<setnpc none>>
+The rotors in the Guppy's leg whir, as Cooper stress-tests his repairs. {{sbopen cooper1}}...
+===
+title: cooper1
+tags: 
+colorID: 0
+position: 584,806
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+Check! We are fully operational, Mariners. {{sbopen jemison1 armstrong1}}...
+===
+title: jemison1
+tags: 
+colorID: 0
+position: 583,582
+---
+<<setguppy jemison>>
+<<setface nervous>>
+<<dgmode player>>
+Cooper, I know what you're thinking and I'm warning you{{sbopen cooper1.1}}—
+===
+title: armstrong1
+tags: 
+colorID: 0
+position: 585,1035
+---
+<<setguppy armstrong>>
+<<setface nervous>>
+<<dgmode player>>
+Coop, please don't{{sbopen cooper1.1}}—
+===
+title: cooper1.1
+tags: 
+colorID: 0
+position: 806,804
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+And STAMP!
+[[NPC2]]
+===
+title: NPC2
+tags: 
+colorID: 0
+position: 986,363
+---
+<<dgmode npc>>
+<<setnpc QAseal>>
+This hardware has passed all quality assurance tests and is ready for operations. Remember: if you want it super, just bring it to Cooper! {{sbopen cooper2 armstrong2}}...
+===
+title: cooper2
+tags: 
+colorID: 0
+position: 1050,804
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+For what it's worth, you two were super already.
+[[NPC3]]
+===
+title: armstrong2
+tags: 
+colorID: 0
+position: 1052,1035
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Well. In the right light, it's like a cool tattoo!
+[[NPC3]]
+===
+title: NPC3
+tags: 
+colorID: 0
+position: 1265,359
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+Glad that's settled! Now, I'm sure you all have questions, but Jansky's gonna flip if she learns I leaked all this classified info, so I gotta be quick. {{sbopen jemison3 cooper3 armstrong3}}...
+===
+title: jemison3
+tags: 
+colorID: 0
+position: 1369,580
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+How long have you known what was down there?
+[[NPC3j]]
+===
+title: cooper3
+tags: 
+colorID: 0
+position: 1372,806
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+We have almost died multiple time today, I don’t know how comfortable I am with BREAKING RULES on top of that.
+[[NPC4]]
+===
+title: armstrong3
+tags: 
+colorID: 0
+position: 1373,1032
+---
+<<setguppy armstrong>>
+<<setface sad>>
+<<dgmode player>>
+Those orcs... I had no idea we shared this world with them.
+[[NPC3a]]
+===
+title: NPC3j
+tags: 
+colorID: 0
+position: 1590,581
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+Since they sunk MY ship and crippled MY crew. They've been here since the beginning.
+[[NPC4]]
+===
+title: NPC3a
+tags: 
+colorID: 0
+position: 1591,1031
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+Me neither, when I first landed. And the higher-ups are determined to keep it that way.
+[[NPC4]]
+===
+title: NPC4
+tags: 
+colorID: 0
+position: 1745,357
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+All the creatures of the Marbloon ocean have had to adapt to the radiation. They’ve become bigger, meaner, stronger{{sbopen jemison4}}...{{sbclose}}
+[[NPC4.1]]
+===
+title: jemison4
+tags: 
+colorID: 0
+position: 1874,581
+---
+<<setguppy jemison>>
+<<setface eyeroll>>
+<<dgmode player>>
+Had knives duct-taped to their claws...
+[[NPC4j]]
+===
+title: NPC4j
+tags: 
+colorID: 0
+position: 2107,580
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+We don't know who did that and we're not going to stop until we make sure it never happens again.
+[[NPC4.1]]
+===
+title: NPC4.1
+tags: 
+colorID: 0
+position: 1976,356
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+The orcs are the biggest, meanest, and strongest of the bunch. They’re real. They’re smart. And they’re ANGRY. {{sbopen armstrong4}}...
+===
+title: armstrong4
+tags: 
+colorID: 0
+position: 1879,1029
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+Yeah, I got that.
+[[NPC5]]
+===
+title: NPC5
+tags: 
+colorID: 0
+position: 2279,354
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+They took down the Shiny Boy, and if we prod them too hard then they’re going to take down Silica too. So don’t prod them. Got THAT? {{sbopen jemison5 cooper5 armstrong5}}...
+===
+title: jemison5
+tags: 
+colorID: 0
+position: 2380,580
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+We got it. Thanks, Doppler.
+[[NPC6]]
+===
+title: cooper5
+tags: 
+colorID: 0
+position: 2375,806
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+Sounds good to me!!
+[[NPC6]]
+===
+title: armstrong5
+tags: 
+colorID: 0
+position: 2377,1038
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+You’re wearing half a ton of steel armor and you’re still more afraid than a two-pound crab.
+[[NPC5a]]
+===
+title: NPC5a
+tags: 
+colorID: 0
+position: 2602,1037
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+ARMSTRONG. {{sbopen armstrong5.1}}...
+===
+title: armstrong5.1
+tags: 
+colorID: 0
+position: 2826,1036
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+Yeah. I got it.
+[[NPC6]]
+===
+title: NPC6
+tags: 
+colorID: 0
+position: 2943,352
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+You’re not supposed to know this, so it’s business as usual from here on out. Our people up top are working on this. They’ll figure something out. {{sbopen jemison6 cooper6 armstrong6}}...
+===
+title: jemison6
+tags: 
+colorID: 0
+position: 3075,581
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+Somehow I don't believe that.
+[[NPC7]]
+===
+title: cooper6
+tags: 
+colorID: 0
+position: 3077,808
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+Th-that’s good! I KNEW you had the situation under control!
+[[NPC7]]
+===
+title: armstrong6
+tags: 
+colorID: 0
+position: 3078,1040
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+If you say so...
+[[NPC7]]
+===
+title: NPC7
+tags: 
+colorID: 0
+position: 3278,353
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+You did good, Mariners. I’m proud of you.
+<<setnpc none>>
+Doppler leaves. {{sbopen jemison7 cooper7}}...
+===
+title: jemison7
+tags: 
+colorID: 0
+position: 3391,583
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+I don’t think we’ve seen the last of those things.
+<<setface grumpy>>
+I’m so frustrated! We can’t tell anyone about this, and Glocktopus is STILL on the loose!
+[[NPC8]]
+===
+title: cooper7
+tags: 
+colorID: 0
+position: 3393,811
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+I still have questions. 
+Who were those two? Why were they fighting? Why did they run to the Shiny Boy when we chased them? And WHERE DID GLOCKTOPUS GO?
+[[NPC8]]
+===
+title: NPC8
+tags: 
+colorID: 0
+position: 3586,351
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+*MYSTERIOUS ENTRANCE: HERE ALL ALONG* {{sbopen jemison8 cooper8 armstrong8}}...
+===
+title: jemison8
+tags: 
+colorID: 0
+position: 3692,583
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+You! {{sbopen cooper8.1 armstrong8}}...
+===
+title: cooper8
+tags: 
+colorID: 0
+position: 3692,809
+---
+<<setguppy cooper>>
+<<setface baffled>>
+<<dgmode player>>
+AHH! {{sbopen jemison8.1 armstrong8}}...
+===
+title: armstrong8
+tags: 
+colorID: 0
+position: 3691,1037
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Glocktopus!
+[[NPC9]]
+===
+title: jemison8.1
+tags: 
+colorID: 0
+position: 3738,634
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+You! {{sbopen armstrong8}}...
+===
+title: cooper8.1
+tags: 
+colorID: 0
+position: 3740,860
+---
+<<setguppy cooper>>
+<<setface baffled>>
+<<dgmode player>>
+AHH! {{sbopen armstrong8}}...
+===
+title: NPC9
+tags: 
+colorID: 0
+position: 3905,349
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+*CONCILIATORY GUNSHOT: ONLY WE UNDERSTAND* {{sbopen cooper9 armstrong9}}...
+===
+title: cooper9
+tags: 
+colorID: 0
+position: 4025,814
+---
+<<setguppy cooper>>
+<<setface angry>>
+<<dgmode player>>
+STOP!! SHOOTING!! {{sbopen armstrong9}}...
+===
+title: armstrong9
+tags: 
+colorID: 0
+position: 4028,1038
+---
+<<setguppy armstrong>>
+<<setface sad>>
+<<dgmode player>>
+Yeah... I get you. Knife Crab really was one-of-a-kind.
+[[NPC10]]
+===
+title: NPC10
+tags: 
+colorID: 0
+position: 4195,350
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+*FINAL TECHNIQUE: HONOR THE DEATH* {{sbopen armstrong10}}...
+===
+title: armstrong10
+tags: 
+colorID: 0
+position: 4323,1035
+---
+<<setguppy armstrong>>
+<<setface curious>>
+<<dgmode player>>
+What will you do, now that you’re done fighting?
+[[NPC11]]
+===
+title: NPC11
+tags: 
+colorID: 0
+position: 4464,348
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+*LAY DOWN ARMS: THE RIVALRY IS ENDED*
+*blip*
+<<setnpc none>>
+Glocktopus gives a complicated bow, then slips out the window. Soon it vanishes into the sea, where the waves cover all trace of its presence. {{sbopen armstrong11}}...
+===
+title: armstrong11
+tags: 
+colorID: 0
+position: 4558,1035
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+See ya, Glocktopus. {{sbopen cooper11}}...
+===
+title: cooper11
+tags: 
+colorID: 0
+position: 4556,804
+---
+<<setguppy cooper>>
+<<setface confused>>
+<<dgmode player>>
+So... what do we do with all these guns.
+===

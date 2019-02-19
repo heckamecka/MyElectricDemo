@@ -1,0 +1,18 @@
+title: Start
+tags: 
+colorID: 0
+position: 311,1050
+---
+<<dgmode npc>>
+This is a test of using commands to overwrite the speed of displayed text.
+<<setspeed fast>>
+This is the fast speed; The quick brown fox! jumps, over, the lazy dog. The quick brown fox! jumps, over, the lazy dog.
+<<setspeed medium>>
+This is the medium speed; The quick brown fox! jumps, over, the lazy dog. The quick brown fox! jumps, over, the lazy dog.
+<<setspeed slow>>
+This is the slow speed; The quick brown fox! jumps, over, the lazy dog.
+Now we are going to change the text speed inline:
+<<setspeed slow>>
+This sentence starts slow, {{setspeed medium}} but now it's at medium speed. Cool. And now, {{setspeed fast}} let's get fast up in here! Fast fast fast.
+fast fast fast, {{setspeed slow}} slow, slow, {{setspeed medium}} medium!! it's medium!! hell yeah but now {{setspeed fast}} we're fast again, fast fast fast fast fast fassssst
+===

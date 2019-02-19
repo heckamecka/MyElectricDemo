@@ -1,0 +1,1269 @@
+title: Start
+tags: 
+colorID: 0
+position: -11290,-3406
+---
+<<dgmode npc>>
+<<setnpc none>>
+<<setguppy none>>
+{{sbclose}} JUNCTURE ?: THE STATICASTER
+DEPLOYMENT 1 OF 3: SDKLFJSDL
+
+(Prayer goes here)
+
+Deploy to NORTHSIDE, an outcrop of houses built out of salvage with some Marbloon tech greebled on the sides. The gentle waves lap against the plastic edges of the island.
+
+<<setnpc doppler>>
+DOPPLER (radio): Routine check-in, Mariners. You got a visual on the BRAWLISEUM? {{sbopen jca}}
+
+[[j|Jemison1]]
+[[c|Cooper1]]
+[[a|Armstrong1]]
+===
+title: Jemison1
+tags: 
+colorID: 0
+position: -11580,-2934
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: It looks like this is the place. Any idea where {{sbopen a}} Hadfield might be?
+
+[[a|Armstrong2]]
+===
+title: Cooper1
+tags: 
+colorID: 0
+position: -11330,-2934
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Big crowd… are those bobbleheads? {{sbopen a}}
+
+[[a|Armstrong3]]
+===
+title: Armstrong1
+tags: 
+colorID: 0
+position: -11080,-2934
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Wow, this is my kinda dump! There’s so much merch, we definitely gotta pick a t-shirt up or something.
+
+[[npc1]]
+===
+title: Armstrong2
+tags: 
+colorID: 0
+position: -11080,-2684
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Probably the sidelines, chatting up the compers.
+[[npc1]]
+===
+title: NPC1
+tags: 
+colorID: 0
+position: -10830,-2934
+---
+<<dgmode npc>>
+<<setnpc doppler>>
+DOPPLER (radio): You can grab merch after the mission, see if you can flag down Hadfield.
+[[npc2]]
+===
+title: Armstrong3
+tags: 
+colorID: 0
+position: -11080,-2434
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Oh, we have to pick up a Dorado bobblehead.
+[[npc1]]
+===
+title: NPC2
+tags: 
+colorID: 0
+position: -10830,-2684
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: Whoa there, pal! Press and RezCompers only beyond this point. {{sbopen jca}} Got dangerous equipment back here.
+
+
+[[j|Jemison2]]
+[[c|Cooper2]]
+[[a|Armstrong4]]
+===
+title: Cooper2
+tags: 
+colorID: 0
+position: -11330,-2684
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: We’re with the Aquaknights, we need to talk to Hadfield.
+
+[[npc4]]
+===
+title: Jemison2
+tags: 
+colorID: 0
+position: -11580,-2684
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Sorry, who are you supposed to be?
+
+[[npc3]]
+===
+title: Armstrong4
+tags: 
+colorID: 0
+position: -11080,-2184
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: It’s okay, we’re with Hadfield.
+[[npc5]]
+===
+title: NPC4
+tags: 
+colorID: 0
+position: -10830,-2184
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: (eyebrows raised) The Aquaknights? Is that s’posed to mean something to me? {{sbopen jca}} If y’ain’t press and y’ain’t a Comper, head to your seat.
+
+[[j|Jemison4]]
+[[c|Cooper3]]
+[[a|Armstrong4]]
+===
+title: NPC3
+tags: 
+colorID: 0
+position: -10830,-2434
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: I’m the Dab, and I’m a teen just like you! {{sbopen j}}
+
+[[j|Jemison3]]
+===
+title: NPC5
+tags: 
+colorID: 0
+position: -10830,-1934
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: Oh, yeah? You got a press pass?
+{{sbopen a}}
+
+[[a|Armstrong5]]
+===
+title: Jemison3
+tags: 
+colorID: 0
+position: -11580,-2434
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: None of us are teens.
+
+[[npc6]]
+===
+title: Cooper3
+tags: 
+colorID: 0
+position: -11330,-2434
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Understood! W-we’ll be going, then. {{sbopen ja}}
+
+[[j|Jemison6]]
+[[a|Armstrong6]]
+===
+title: NPC6
+tags: 
+colorID: 0
+position: -10830,-1684
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: (dejected) Figures.
+{{sbopen j}}
+
+[[j|Jemison4]]
+===
+title: Jemison4
+tags: 
+colorID: 0
+position: -11580,-2184
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: No room for adoring fans back there? {{sbclose}} I have a poster that could use some autographs.
+
+[[npc7]]
+
+===
+title: Cooper4
+tags: 
+colorID: 0
+position: -11330,-2184
+---
+<<dgmode player>>
+<<setguppy cooper>>
+
+COOPER: Sorry, I panicked!
+
+{{sbopen ja}}
+
+[[j|Jemison]]
+[[a|Armstrong]]
+===
+title: NPC7
+tags: 
+colorID: 0
+position: -10830,-1434
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: Oh, gotcha! Where is it?
+{{sbopen j}}
+
+[[j|Jemison5]]
+===
+title: Jemison5
+tags: 
+colorID: 0
+position: -11580,-1934
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Where’s what?
+[[npc8]]
+===
+title: Armstrong5
+tags: 
+colorID: 0
+position: -11082,-1938
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: (floundering) They’re… holding it for us inside.
+
+[[npc10]]
+===
+title: Cooper5
+tags: 
+colorID: 0
+position: -11330,-1934
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Sorry, but why does this matter right now?
+
+[[a|Armstrong10]]
+===
+title: npc8
+tags: 
+colorID: 0
+position: -10830,-1184
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: …Your poster? {{sbopen j}}
+[[j|Jemison7]]
+===
+title: Jemison6
+tags: 
+colorID: 0
+position: -11580,-1684
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Well, there goes our chance.
+{{sbopen c}}
+
+[[c|Cooper4]]
+===
+title: Armstrong6
+tags: 
+colorID: 0
+position: -11080,-1684
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Seriously, Coop?
+{{sbopen c}}
+
+[[c|Cooper4]]
+===
+title: Cooper6
+tags: 
+colorID: 0
+position: -11330,-1684
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Oh, no. 
+
+[[a|Armstrong12]]
+===
+title: Jemison7
+tags: 
+colorID: 0
+position: -11580,-1434
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Oh, it’s… ah, I must’ve left it at home.
+
+[[npc9]]
+===
+title: NPC9
+tags: 
+colorID: 0
+position: -10830,-934
+---
+<<dgmode npc>>
+<<setnpc dab>>
+{{sbclose}}
+“THE DAB” SULLIVAN: Well, if you don’t have something to sign, {{sbopen jca}} you’re gonna to have to move along.
+
+[[j|jemison8]]
+[[c|cooper3]]
+[[a|armstrong4]]
+===
+title: Jemison8
+tags: 
+colorID: 0
+position: -11580,-1184
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: …Well, that didn’t work. {{sbopen ja}}
+
+[[j|Jemison9]]
+[[a|Armstrong7]]
+===
+title: Cooper7
+tags: 
+colorID: 0
+position: -11330,-1434
+---
+<<dgmode player>>
+<<setguppy cooper>>
+ COOPER: Wow, I’ve never worn this much macaroni in my life.
+
+{{sbopen a}}
+
+[[a|Armstrong
+===
+title: Armstrong7
+tags: 
+colorID: 0
+position: -11080,-1434
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Jemison?
+
+[[j|Jemison10]]
+===
+title: Jemison9
+tags: 
+colorID: 0
+position: -11580,-934
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: This teen’s got eyes like a shark. What’s our next move?
+
+[[a|Armstrong7]]
+===
+title: Jemison10
+tags: 
+colorID: 0
+position: -11580,-684
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Yes?
+
+[[a|Armstrong8]]
+===
+title: Armstrong8
+tags: 
+colorID: 0
+position: -11080,-1184
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: You’re good with a needle and a glue gun, {{sbopen jc}} right?
+
+[[j|Jemison11]]
+[[c|Cooper5]]
+===
+title: NPC10
+tags: 
+colorID: 0
+position: -10830,-684
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: Listen, there’s no other press but Hadfield, bud.
+
+[[a|Armstrong9]]
+===
+title: Armstrong9
+tags: 
+colorID: 0
+position: -11080,-934
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Then why’d you ask?! Urgh.
+
+[[npc11]]
+===
+title: NPC11
+tags: 
+colorID: 0
+position: -10830,-434
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: (retorting, aggressive) I dunno, why’d you lie?! {{sbopen j}}
+
+[[j|Jemison9]]
+===
+title: Jemison11
+tags: 
+colorID: 0
+position: -11580,-434
+---
+<<dgmode player>>
+<<setguppy jemison>>
+ JEMISON: Yes…? Where is this going? {{sbopen ca}}
+
+[[c|Cooper5]]
+[[a|Armstrong10]]
+===
+title: Armstrong10
+tags: 
+colorID: 0
+position: -11080,-684
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+
+ARMSTRONG: If they’re only letting RezCompers in now, then… {{sbopen jc}}
+
+[[j|Jemison12]]
+[[c|Cooper6]]
+===
+title: Jemison12
+tags: 
+colorID: 0
+position: -11580,-184
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: (sighing, resigned) If the mask fits. {{sbopen ca}}
+
+[[c|Cooper6]]
+[[a|Armstrong11]]
+===
+title: Armstrong11
+tags: 
+colorID: 0
+position: -11080,-434
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Let’s hope it does!
+
+[[j|Jemison13]]
+===
+title: Armstrong12
+tags: 
+colorID: 0
+position: -11080,-184
+---
+<<dgmode player>>
+<<setguppy jemison>>
+ARMSTRONG: Oh, yeah.
+
+[[j|Jemison13]]
+===
+title: Jemison13
+tags: 
+colorID: 0
+position: -11580,66
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: I took a few liberties with the sketch Armstrong gave me. Unfortunately, we lack the resources and budget to make twin flamethrowers that shoot fire out of our shoulders while also making air horn noises. {{sbopen ca}}
+
+[[c|Cooper7]]
+[[a|Armstrong13]]
+===
+title: Armstrong13
+tags: 
+colorID: 0
+position: -11080,66
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: This. Is. PERFECT!
+ARMSTRONG: We’ll blend right in! RezCompers love flashy outfits. And aliases.
+
+[[c|Cooper8]]
+===
+title: Cooper8
+tags: 
+colorID: 0
+position: -11330,-1184
+---
+<<dgmode player>>
+<<setnpc cooper>>
+COOPER: Sucker Punch, really?
+
+[[a|Armstrong14]]
+===
+title: Armstrong14
+tags: 
+colorID: 0
+position: -11080,316
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Trust me, it’s going to work. These folks are all about cool nicknames. {{sbopen jc}}
+
+[[j|Jemison14]]
+[[c|Cooper9]]
+===
+title: Cooper9
+tags: 
+colorID: 0
+position: -11330,-934
+---
+<<dgmode player>>
+<<setnpc cooper>>
+COOPER: If you say so…
+
+[[npc12]]
+===
+title: Jemison14
+tags: 
+colorID: 0
+position: -11580,316
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: "Cool" being the operative word here.
+[[npc12]]
+===
+title: NPC12
+tags: 
+colorID: 0
+position: -10830,-184
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: RezComper Name? {{sbopen jca}}
+
+[[j|Jemison15]]
+[[c|Cooper10]]
+[[a|Armstrong15]]
+===
+title: Jemison15
+tags: 
+colorID: 0
+position: -11580,566
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Sucker Punch. Where do I go to hit things?
+[[npc13]]
+===
+title: Armstrong15
+tags: 
+colorID: 0
+position: -11080,566
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+THE NAME’S SUCKER PUNCH!! THE MUSCULAR MOLLUSCULAR!! CEPHALOPOD WITH A *wink* KILLER BOD!
+[[npc13]]
+===
+title: Cooper10
+tags: 
+colorID: 0
+position: -11330,-684
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: S-Sucker Punch, at your service!
+[[npc13]]
+===
+title: npc13
+tags: 
+colorID: 0
+position: -10821,62
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: Sucker Punch, huh? You look familiar, but… I don’t remember seeing you in the quarterfinals…
+{{sbopen jca}}
+[[j|Jemison16]]
+[[c|Cooper11]]
+[[a|Armstrong16]]
+===
+title: Jemison16
+tags: 
+colorID: 0
+position: -11580,816
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: (shrugs) Lucky tiebreak.
+[[npc14]]
+===
+title: Cooper11
+tags: 
+colorID: 0
+position: -11330,-434
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: W-We’re easy to miss.
+[[j|Jemison16]]
+===
+title: Armstrong16
+tags: 
+colorID: 0
+position: -11080,816
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Well, you’ll see us now!
+[[npc14]]
+===
+title: npc14
+tags: 
+colorID: 0
+position: -10830,316
+---
+<<dgmode npc>>
+<<setnpc dab>>
+“THE DAB” SULLIVAN: Riiiight. Go on through.
+
+[[a|Armstrong17]]
+===
+title: Jemison17
+tags: 
+colorID: 0
+position: -11580,1066
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: So don’t blink!
+[[npc14]]
+===
+title: Cooper12
+tags: 
+colorID: 0
+position: -11330,-184
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: That must be Hadfield she’s talking to. Let’s see if we can jump into their conversation.
+===
+title: Cooper13
+tags: 
+colorID: 0
+position: -11330,66
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: My… special move?
+[[npc16]]
+===
+title: Cooper14
+tags: 
+colorID: 0
+position: -11330,316
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Well, I’m still, um… working on that.
+[[npc16]]
+===
+title: Cooper15
+tags: 
+colorID: 0
+position: -11330,566
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: L-luck?
+[[npc17]]
+===
+title: Cooper16
+tags: 
+colorID: 0
+position: -11330,816
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: (encouraged) Right, thanks.
+[[npc17]]
+===
+title: Armstrong17
+tags: 
+colorID: 0
+position: -11080,1066
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: (whispering, can barely contain their excitement) That’s her! That’s Méndez!!!! {{sbopen jc}}
+
+[[j|Jemison18]]
+[[c|Cooper12]]
+===
+title: Jemison18
+tags: 
+colorID: 0
+position: -11580,1316
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Be cool, try to blend in. Right now she’s just another competitor.
+[[npc15]]
+===
+title: npc15
+tags: 
+colorID: 0
+position: -10830,566
+---
+<<dgmode npc>>
+<<setnpc infernal>>
+“INFERNAL MACKEREL” COLEMAN: So, Sucker Punch, was it? What’s your special move?
+[[c|Cooper13]]
+===
+title: npc16
+tags: 
+colorID: 0
+position: -10830,816
+---
+<<dgmode npc>>
+<<setnpc infernal>>
+“INFERNAL MACKEREL” COLEMAN: The competition starts in twenty minutes and you don’t even have a special move yet?! How’d you make it to semis?
+[[c|Cooper15]]
+===
+title: npc17
+tags: 
+colorID: 0
+position: -10830,1066
+---
+<<dgmode npc>>
+<<setnpc holy>>
+“HOLY MACKEREL” COLLINS: Whale, whale, whale, what do we have here? They didn’t tell us we were getting newbies in semis. What’s your name?
+[[a|Armstrong18]]
+===
+title: Jemison19
+tags: 
+colorID: 0
+position: -11585,1575
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Rain check it, Armstrong. We need to talk to Hadfield.
+[[a|Armstrong20]]
+===
+title: Cooper17
+tags: 
+colorID: 0
+position: -11330,1066
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Armstrong, please, we’re not actually competing!
+[[a|Armstrong20]]
+===
+title: Armstrong18
+tags: 
+colorID: 0
+position: -11082,1296
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Sucker Punch, and what makes you think we’re newbies?
+[[npc18]]
+===
+title: npc18
+tags: 
+colorID: 0
+position: -10830,1316
+---
+<<dgmode npc>>
+<<setnpc holy>>
+“HOLY MACKEREL” COLLINS: I know every RezComper on this island, Sucker.
+[[npc19]]
+===
+title: npc19
+tags: 
+colorID: 0
+position: -10826,1579
+---
+<<dgmode npc>>
+<<setnpc infernal>>
+
+“INFERNAL MACKEREL” COLEMAN: Easy, Collins.
+[[npc20]]
+===
+title: npc20
+tags: 
+colorID: 0
+position: -10816,1827
+---
+<<dgmode npc>>
+<<setnpc holy>>
+“HOLY MACKEREL” COLLINS: Hey–it’s Holy Mackerel in the Brawliseum, okay?!
+[[a|Armstrong19]]
+===
+title: Armstrong19
+tags: 
+colorID: 0
+position: -11087,1563
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Well, you’re about to know one more. {{sbopen jc}}
+[[j|Jemison19]]
+[[c|Cooper17]]
+===
+title: Armstrong20
+tags: 
+colorID: 0
+position: -11089,1822
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Right, I almost forgot. Oh! Looks like Hadfield’s free now! {{sbopen jca}}
+[[j|Jemison20]]
+[[c|Cooper18]]
+[[a|Armstrong21]]
+===
+title: Cooper18
+tags: 
+colorID: 0
+position: -11332,1318
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Excuse me, Mx. Hadfield, we’re with the Aquaknights. We have some questions to ask you.
+===
+title: Jemison20
+tags: 
+colorID: 0
+position: -11587,1832
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Excuse me, you’re Hadfield, right?
+[[npc21]]
+===
+title: Armstrong21
+tags: 
+colorID: 0
+position: -11088,2077
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Hey there! Big fan.
+[[npc30]]
+===
+title: npc21
+tags: 
+colorID: 0
+position: -10818,2068
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: What gave it away? The recorder or the press badge?
+[[j|Jemison21]]
+===
+title: Jemison21
+tags: 
+colorID: 0
+position: -11591,2059
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: (dry) Your charm, evidently. Let’s cut to the chase, we’re here with the Aquaknights investigating a local disturbance. Any idea where that hum on your show came from?
+[[npc22]]
+===
+title: Cooper19
+tags: 
+colorID: 0
+position: -11318,1560
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: Yes, we’re a task force dedicated t–
+[[npc27]]
+===
+title: npc22
+tags: 
+colorID: 0
+position: -10814,2288
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Ah, that. If I knew, I’d try to stop it. I managed to get a sample of it and later triangulated the signal. {{sbopen jca}}
+[[j|Jemison22]]
+[[c|Cooper]]
+[[a|Armstrong]]
+===
+title: Jemison22
+tags: 
+colorID: 0
+position: -11598,2299
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Wait, so you’ve pinpointed its location?
+[[npc23]]
+===
+title: npc23
+tags: 
+colorID: 0
+position: -10811,2506
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Not its exact location, per se.
+HADFIELD: It seems to move a lot, but it’s mostly around the Silica Lighthouse. Locals like to call it the Northside Hum. 
+HADFIELD: The point is, I had a Premiere Interview™ last night with Méndez and that noise messed it all up! You’ve got to stop that infernal humming, it’s killing my ratings!
+
+[[npc28]]
+===
+title: Jemison23
+tags: 
+colorID: 0
+position: -11589,2542
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: You have ratings?
+[[npc24]]
+===
+title: npc24
+tags: 
+colorID: 0
+position: -10811,2728
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Every show has ratings.
+HADFIELD: Hell, even that blasted numbers station has ratings, I’ve checked–they’re terrible!
+HADFIELD: Never mind, just–find that thing and stop it. Best place to start would be the Silica Lighthouse. {{sbopen jca}}
+[[j|Jemison24]]
+[[c|Cooper22]]
+[[a|Armstrong25]]
+===
+title: Jemison24
+tags: 
+colorID: 0
+position: -11592,2762
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: We’re on it.
+[[npc25]]
+===
+title: npc25
+tags: 
+colorID: 0
+position: -10804,2964
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: That’s what I like to hear. Now, if you’ll excuse me, I need to go get set up, the competition starts soon. {{sbopen jca}}
+[[j|Jemison25]]
+[[c|Cooper23]]
+[[a|Armstrong30]]
+===
+title: Jemison25
+tags: 
+colorID: 0
+position: -11604,2985
+---
+<<dgmode player>>
+<<setguppy jemison>>
+JEMISON: Well that’s a radio personality if I ever saw one. Let’s find that lighthouse.
+===
+title: npc26
+tags: 
+colorID: 0
+position: -10795,3189
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Woah woah, slow down! The Aquaknights, huh?
+[[c|Cooper19]]
+===
+title: npc27
+tags: 
+colorID: 0
+position: -10792,3410
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: I know what the Aquaknights are! Sorry, it’s just. Huh. This is a first–usually I’m the one asking questions. Anyway, what’s going on? {{sbopen ca}}
+[[c|Cooper20]]
+[[a|Armstrong25]]
+===
+title: Cooper20
+tags: 
+colorID: 0
+position: -11324,1817
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: What can you tell us about that strange hum that was on your show last night?
+[[npc22]]
+===
+title: Cooper21
+tags: 
+colorID: 0
+position: -11331,2056
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: So you know where this thing is?
+[[npc23]]
+===
+title: Cooper22
+tags: 
+colorID: 0
+position: -11328,2288
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: W-we’ll do our best, Mx.!
+[[npc25]]
+===
+title: npc28
+tags: 
+colorID: 0
+position: -10783,3650
+---
+<<dgmode npc>>
+<<setnpc infernal>>
+“INFERNAL MACKEREL” COLEMAN: DID SOMEONE SAY INFERNAL?
+[[npc29]]
+===
+title: npc29
+tags: 
+colorID: 0
+position: -10776,3880
+---
+<<dgmode npc>>
+<<setnpc holy>>
+“HOLY MACKEREL” COLLINS: Shush, they’re interviewing!
+[[j|Jemison23]]
+===
+title: npc30
+tags: 
+colorID: 0
+position: -10779,4106
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Join the club.
+===
+title: Armstrong22
+tags: 
+colorID: 0
+position: -11095,2307
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: You have a club?! Where do I sign up?
+[[npc31]]
+===
+title: npc31
+tags: 
+colorID: 0
+position: -10774,4332
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Talk to the Dab by the door, she can get your info. Anything else?
+===
+title: Armstrong23
+tags: 
+colorID: 0
+position: -11100,2515
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: One more thing! We’re with the Aquaknights. Do you have a few minutes to answer our questions?
+[[npc32]]
+===
+title: Armstrong24
+tags: 
+colorID: 0
+position: -11100,2750
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: We’re a completely different division.
+[[npc33]]
+===
+title: npc32
+tags: 
+colorID: 0
+position: -10773,4560
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: For a public servant? Always. Unless you’re a cop. You’re not a cop, right?
+===
+title: npc33
+tags: 
+colorID: 0
+position: -10780,4779
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Ask away, then. {{sbopen ca}}
+
+[[c|Cooper20]]
+[[a|Armstrong25]]
+===
+title: Armstrong25
+tags: 
+colorID: 0
+position: -11102,2995
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Do you know anything about the noise that we heard last night on your show?
+[[npc34]]
+===
+title: npc34
+tags: 
+colorID: 0
+position: -10780,5007
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+HADFIELD: Ohhh, you mean the Hum?
+[[a|Armstrong]]
+===
+title: Armstrong26
+tags: 
+colorID: 0
+position: -11104,3227
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Yeah–is that really what it’s called? Who came up with that?
+[[npc35]]
+===
+title: npc35
+tags: 
+colorID: 0
+position: -10770,5250
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: I did.
+[[a|Armstrong27]]
+===
+title: Armstrong27
+tags: 
+colorID: 0
+position: -11116,3435
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Oh.
+[[npc36]]
+===
+title: npc36
+tags: 
+colorID: 0
+position: -10776,5480
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Nah, I’m just messing with ya.
+HADFIELD: Us locals call it the Northside Hum, or just the Hum for short. I’ve been trying to pinpoint the source for a few weeks now, and–
+[[a|Armstrong28]]
+===
+title: Armstrong28
+tags: 
+colorID: 0
+position: -11104,3656
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: You found it?!
+[[npc37]]
+===
+title: npc37
+tags: 
+colorID: 0
+position: -10778,5703
+---
+<<dgmode npc>>
+<<setnpc hadfield>>
+HADFIELD: Not exactly. It seems to move a lot, but whatever it is, it mostly sticks around the Silica Lighthouse.
+HADFIELD: The point is, I had a Premiere Interview™ last night with Méndez and that noise messed it all up! You’ve got to stop that infernal humming, it’s killing my ratings!
+[[npc28]]
+===
+title: Armstrong29
+tags: 
+colorID: 0
+position: -11109,3894
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: We won’t let you down!
+[[npc25]]
+===
+title: Armstrong30
+tags: 
+colorID: 0
+position: -11118,4122
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+ARMSTRONG: Guess it’s true what they say about celebrities. Let’s head to the lighthouse.
+===
+title: Cooper23
+tags: 
+colorID: 0
+position: -11341,2525
+---
+<<dgmode player>>
+<<setguppy cooper>>
+COOPER: You think they’d be nicer since we’re doing this for them. I guess we better get more info from the lighthouse keeper.
+===

@@ -1,0 +1,12 @@
+title: Start
+tags: 
+colorID: 0
+position: 431,116
+---
+<<dgmode npc>>
+<<setnpc none>>
+<<setguppy none>>
+Let's try doing the madlib things with just a single word: ((wut|what|wat)).
+Now let's try doing madlib with sentences: ((im so confused|what am i doing here|ahahahaha))
+Ok, now let's do madlibs with extra parenthesis: (((what is going on|i hope this works|this better friggin work)))
+===

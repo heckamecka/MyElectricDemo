@@ -1,0 +1,64 @@
+title: Start
+tags: 
+colorID: 2
+position: -3052,-3862
+---
+<<setnpc kirkwood stressed>>
+<<setspeaker kirkwood>>
+Well batter my aft and call me a cod-
+<<setnpc kirkwood skeptical>>
+You must be Fermi's new crew. 
+Ready for a good ol fashioned {{sbopen jemison2}}stakeout?
+===
+title: jemison2
+tags: 
+colorID: 0
+position: -2811,-3638
+---
+<<setface angry>>
+This is a waste of time. 
+<<bumpguppy 10>>
+<<setface grumpy>>
+<<gate>>
+Worse yet, this is a waste of <shake>MY</shake> {{sbgate}}time.
+<<cooper>>
+<<setface sad>>
+Jem, be quiet {{sbgate}}please. 	
+<<armstrong>>	
+<<setface happy>>
+NIGHTS STILL YOUNG. YOUNG AND RECKLESS. 
+YOUNG ENOUGH TO SHOTGUN A BEER, FALL ASLEEP ON THE FLOOR, AND NOT WAKE UP WITH {{sbgate}}A PAIN IN ITS BACK.  
+<<endgate>> 
+{{sbopen jemison3}}
+===
+title: jemison3
+tags: 
+colorID: 0
+position: -2559,-3636
+---
+<<setface grumpy>>
+Haven’t you dolts heard of the Observer Effect? 
+Just observing a phenomenon necessarily changes the {{sbopen cooper4}}outcome.
+===
+title: cooper4
+tags: 
+colorID: 0
+position: -2334,-3414
+---
+<<setface nervous>>
+Er, to my understanding, 
+the Observer Effect mostly applies to situations <trail>involving specialized{{sbopen jemison5}} measurement instruments-</trail>
+===
+title: jemison5
+tags: 
+colorID: 0
+position: -2080,-3638
+---
+<<setface angry>>
+<<shakeguppy 30>>
+<big>Your whole body is a measurement instrument!</big>
+<<setface grumpy>>
+Don’t make me explain quantum mechanics!... 
+Because you’re pushing the boundaries of my confident understanding 
+and I’ll end up making shit up, and looking stupid when you inevitably fact check me. 
+===

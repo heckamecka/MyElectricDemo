@@ -1,0 +1,1 @@
+"C:/Program Files/nwjs-v0.25.2-win-x64/nw.exe" "C:/Users/Brendan/GameDevSourceControl/Meh-Yarn"

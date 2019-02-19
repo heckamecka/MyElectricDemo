@@ -1,0 +1,446 @@
+title: oldstart
+tags: 
+colorID: 6
+position: -1372,-1783
+---
+<<setnpc none>>
+<<dgmode npc>>
+<<setbg arbys>>
+<<setguppy none>>
+JUNCTURE ?: THE BRINE SHADE
+DEPLOYMENT 1 of ?: THE SHINY BOYS ARE BACK IN TOWN
+
+By thunder clash and tempest churn
+From soup we sprang and to slime we return
+
+<<setbg waffle-dusk>>
+Deploy to SILICA LIGHTHOUSE, a crooked, dumpy-lookin tower by the shore. Out front is a garden of wooden planter-boxes, lush with vegetables. 
+Beans, gourds, greens... the works. 
+
+[[NPC1]]
+===
+title: jemison8
+tags: 
+colorID: 0
+position: -746,-1531
+---
+<<setguppy jemison>>
+<<dgmode player>>
+Word travels fast! I’m Jemison, the official unofficial leader of this outfit. 
+These are my lovable subordinates, {{sbopen cooper8.1}}Cooper... {{sbopen armstrong8.1}}and Armstrong...{{sbopen jemison9 cooper9 armstrong9}}...
+===
+title: cooper8
+tags: 
+colorID: 0
+position: -748,-1302
+---
+<<setguppy cooper>>
+<<dgmode player>>
+H-hello citizen. I’m Cadet Cooper, and these are my colleagues, {{sbopen jemison8.1}} Jemison... and, uh... {{sbopen armstrong8.1}}Armstrong.{{sbopen jemison9 cooper9 armstrong9}}..
+
+===
+title: Start
+tags: 
+colorID: 0
+position: -994,-1781
+---
+<<setnpc kirkwood>>
+KIRKWOOD: Well, batter my aft and call me a cod. You must be Fermi’s new crew. {{sbopen jemison8 cooper8 armstrong8}}
+Kirkwood lounges in a battered lawn chair that holding a glass of colorful slime drink. 
+
+===
+title: armstrong8
+tags: 
+colorID: 0
+position: -746,-1069
+---
+<<setguppy armstrong>>
+<<dgmode player>>
+Hot off the assembly line! My name’s Armstrong and these are my trusty compatriots {{sbopen jemison8.2}}Jemison... and Cooper!{{sbopen cooper8.2}}
+Your tax credits at work! Brains, brawn, and uh… (thoughtful) 
+that special Jemison something-something!...{{sbopen jemison8.4 cooper8.4}}...
+
+===
+title: cooper8.1
+tags: 
+colorID: 0
+position: -460,-1292
+---
+<<setguppy cooper>>
+Cooper: R-reporting for {{sbopen jemison8.3}}service! 
+===
+title: armstrong8.1
+tags: 
+colorID: 0
+position: -460,-1061
+---
+<<setguppy armstrong>>
+Armstrong flexes.
+ARMSTRONG: Autographs available upon {{sbopen jemison9 cooper9 armstrong9}}request. 
+===
+title: jemison8.1
+tags: 
+colorID: 0
+position: -460,-1529
+---
+<<setguppy jemison>>
+Jemison winks.
+JEMISON: Howdy doo, dunkaroo.{{sbopen cooper8.3}}
+===
+title: jemison8.3
+tags: 
+colorID: 0
+position: 90,-1520
+---
+<<setguppy jemison>>
+-and {{sbopen armstrong8.1}}Armstrong...
+{{sbopen jemison9 cooper9 armstrong9}}
+===
+title: cooper8.3
+tags: 
+colorID: 0
+position: 92,-1286
+---
+<<setguppy cooper>>
+COOPER: and, uh... {{sbopen armstrong8.2}}Armstrong...
+{{sbopen jemison9 cooper9 armstrong9}}
+===
+title: NPC2
+tags: 
+colorID: 0
+position: 1131,-1742
+---
+<<dgmode npc>>
+KIRKWOOD: If this is about me not answering Fermi's comms, I'm sorry alright.
+KIRKWOOD: I'm a busy bot, okay? 
+Kirkwood takes a sip from their glass of colorful ooze. Fruity-looking slime dribbles down their {{sbopen jemison10 cooper10 armstrong10}}mouthless face. 
+===
+title: jemison8.2
+tags: 
+colorID: 0
+position: -188,-1528
+---
+<<setguppy jemison>>
+Jemison winks.
+JEMISON: Howdy doo, dunkaroo.{{sbopen armstrong8.3}}
+===
+title: cooper8.2
+tags: 
+colorID: 0
+position: -188,-1280
+---
+<<setguppy cooper>>
+Cooper: R-reporting for {{sbopen armstrong9.1}}service! 
+===
+title: armstrong8.2
+tags: 
+colorID: 0
+position: -186,-1053
+---
+<<setguppy armstrong>>
+Armstrong flexes.
+ARMSTRONG: Autographs available upon {{sbopen jemison9 cooper9 armstrong9}}request. 
+===
+title: armstrong8.3
+tags: 
+colorID: 0
+position: 95,-1050
+---
+<<setguppy armstrong>>
+ARMSTRONG: -and Cooper!{{sbopen cooper8.2}}
+ARMSTRONG: Your tax credits at work! Brains, brawn, and uh… (thoughtful) 
+ARMSTRONG: that special Jemison something-something!...{{sbopen jemison8.4 cooper8.4}}... 
+
+
+===
+title: jemison9
+tags: 
+colorID: 0
+position: 643,-1524
+---
+<<setguppy jemison>>
+JEMISON: We're responding to a complaint.
+[[NPC2]]
+===
+title: cooper9
+tags: 
+colorID: 0
+position: 645,-1289
+---
+<<setguppy cooper>>
+COOPER: We're, uh, responding to a complaint. 
+[[NPC2]]
+===
+title: armstrong9
+tags: 
+colorID: 0
+position: 648,-1054
+---
+<<setguppy armstrong>>
+ARMSTRONG: Got any old phone books you need torn in half?{{sbopen jemison9.1}}
+ARMSTRONG: Maybe I can haul those old tires out for ya, huh? 
+
+===
+title: jemison8.4
+tags: 
+colorID: 0
+position: 368,-1526
+---
+<<setguppy jemison>>
+JEMISON: It’s called personality{{sbopen jemison9 cooper9 armstrong9}}.
+===
+title: cooper8.4
+tags: 
+colorID: 0
+position: 371,-1284
+---
+<<setguppy cooper>>
+COOPER: A thin and mysterious film of organic grime{{sbopen jemison9 cooper9 armstrong9}}?
+===
+title: jemison9.1
+tags: 
+colorID: 0
+position: 892,-1526
+---
+<<setguppy jemison>>
+JEMISON: Ignore Armstrong-
+[[jemison9]]
+===
+title: jemison10
+tags: 
+colorID: 0
+position: 1384,-1534
+---
+<<dgmode guppy>>
+<<setguppy jemison>>
+JEMISON: Nah, but I'll send Fermi your best wishes. 
+JEMISON: Shoredwellers are complaining about something they call the Northside Hum?
+[[NPC3]]
+===
+title: cooper10
+tags: 
+colorID: 0
+position: 1385,-1301
+---
+<<dgmode guppy>>
+<<setguppy cooper>>
+COOPER: No, um... uh.
+COOPER: Shoredwellers are complaining about something they call the Northside Hum?
+[[NPC3]]
+===
+title: armstrong10
+tags: 
+colorID: 0
+position: 1387,-1066
+---
+<<dgmode guppy>>
+<<setguppy armstrong>>
+ARMSTRONG: FOREGOING MY CONCERN about the long-term health of your personal relationships-
+AMRSTRONG: We’re here about the Northside Hum. Heard of it?
+[[NPC3]]
+===
+title: NPC3
+tags: 
+colorID: 0
+position: 1617,-1752
+---
+KIRKWOOD: If you hadn't noticed, the ocean is practically a capsule machine of eldritch horrors.
+KIRKWOOD: A parade of screeching, oozing, salty things.
+KIRKWOOD: But the hum, well...
+KIRKWOOD: The hum's not hurting {{sbopen cooper11}}anyone.
+===
+title: cooper11
+tags: 
+colorID: 0
+position: 1905,-1296
+---
+<<setguppy cooper>>
+COOPER: But we've... recieved complaints! ComplaintSSSSS plural.
+[[NPC4]]
+===
+title: NPC4
+tags: 
+colorID: 0
+position: 2132,-1761
+---
+KIRKWOOD: The hum's a fixture of Sillica. 
+KIRKWOOD: What're you gonna do next, scold the barnacles for being inconvenient?
+KIRKWOOD: Holler at the {{sbopen jemison12}}surf with your little megaphone? 
+===
+title: jemison12
+tags: 
+colorID: 0
+position: 2365,-1547
+---
+<<setguppy jemison>> 
+JEMISON: (impatient) We're new, cut us some slack. 
+[[NPC5]]
+===
+title: armstrong9.1
+tags: 
+colorID: 0
+position: 908,-1051
+---
+<<setguppy armstrong>>
+ARMSTRONG: Your tax credits at work! Brains, brawn, and uh… (thoughtful) 
+ARMSTRONG: that special Jemison something-something!...{{sbopen jemison8.4 cooper8.4}}... 
+===
+title: NPC5
+tags: 
+colorID: 0
+position: 2600,-1769
+---
+KIRKWOOD: All I know is it's strongest at dusk and dawn. 
+KIRKWOOD: I'd guess... northwest of here. Featherduster {{sbopen jemison13 cooper13 armstrong13}}territory.
+===
+title: jemison13
+tags: 
+colorID: 0
+position: 2847,-1508
+---
+<<setguppy jemison>>
+JEMISON: Featherduster?
+[[NPC6]]
+===
+title: cooper13
+tags: 
+colorID: 0
+position: 2847,-1283
+---
+<<setguppy cooper>>
+COOPER: Featherduster?
+[[NPC6]]
+===
+title: armstrong13
+tags: 
+colorID: 0
+position: 2849,-1053
+---
+<<setguppy armstrong>>
+ARMSTRONG: Featherduster?
+[[NPC6]]
+===
+title: NPC6
+tags: 
+colorID: 0
+position: 3073,-1735
+---
+KIRKWOOD: Ultrasonic mutant dolphins who whisper unwelcome truths.
+KIRKWOOD: *shrugs* Like I said, eldritch {{sbopen jemison14 cooper14 armstrong14}}gachapon. 
+
+===
+title: jemison14
+tags: 
+colorID: 0
+position: 3303,-1512
+---
+<<setguppy jemison>>
+JEMISON: That's helpful! Thank you- uh.
+JEMISON: Sorry, I didn’t catch your name. 
+[[NPC7]]
+===
+title: cooper14
+tags: 
+colorID: 0
+position: 3307,-1288
+---
+<<setguppy cooper>>
+COOPER: Good, thank you.
+COOPER: I'm going to need your name for our records.
+[[NPC7]]
+===
+title: armstrong14
+tags: 
+colorID: 0
+position: 3307,-1061
+---
+<<setguppy armstrong>>
+ARMSTRONG: I smell adventure!!...
+ARMSTRONG: Oh! I don’t think we caught your name-
+[[NPC7]]
+===
+title: NPC7
+tags: 
+colorID: 0
+position: 3525,-1725
+---
+KIRKWOOD: (quietly) Kirkwood{{sbopen jemison15 cooper15 armstrong15}}...
+===
+title: jemison15
+tags: 
+colorID: 0
+position: 3763,-1512
+---
+<<setguppy jemison>>
+JEMISON: Can you speak up please?
+[[NPC8]]
+===
+title: cooper15
+tags: 
+colorID: 0
+position: 3766,-1290
+---
+<<setguppy cooper>>
+COOPER: I… Sorry did you say… Kirkwood? As in Commander Kirkwood of the SS SHINY BOY? 
+COOPER: (trembling) I… I have your trading card!
+[[NPC9]]
+===
+title: armstrong15
+tags: 
+colorID: 0
+position: 3767,-1063
+---
+<<setguppy armstrong>>
+ARMSTRONG: Sorry, didn't catch that-
+[[NPC8]]
+===
+title: NPC8
+tags: 
+colorID: 0
+position: 3995,-1721
+---
+KIRKWOOD: It's {{sbopen cooper15}}Kirkwood.
+===
+title: NPC9
+tags: 
+colorID: 0
+position: 4233,-1719
+---
+KIRKWOOD: Former Commander… And yea? 
+KIRKWOOD: What’s the card economy like these days? 
+KIRKWOOD: How many Kirkwoods to a Fermi? 
+===
+title: jemison16
+tags: 
+colorID: 0
+position: 4465,-1486
+---
+<<setguppy jemison>>
+JEMISON: I heard your body got smashed flatter than a flounder.
+[[NPC10]]
+===
+title: cooper16
+tags: 
+colorID: 0
+position: 4466,-1272
+---
+<<setguppy cooper>>
+I heard you held off an entire pod of Orcs all on your own!
+[[NPC10]]
+===
+title: armstrong16
+tags: 
+colorID: 0
+position: 4465,-1051
+---
+<<setguppy armstrong>>
+ARMSTRONG: I heard you spent over 24 hours cored into a class C Megafreighter! 
+[[NPC10]]
+===
+title: NPC10
+tags: 
+colorID: 0
+position: 4687,-1692
+---
+KIRKWOOD: (tense) Eh. Tragic backstories are for edgelords and teen wizards. 
+===

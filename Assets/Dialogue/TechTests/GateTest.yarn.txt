@@ -1,0 +1,36 @@
+title: Start
+tags: 
+colorID: 0
+position: 266,124
+---
+HIya folksssss
+woop de doop
+<<gate>>
+<<jemison>>
+jemison here, sup
+testing commands:
+<<setnpc fermihappy>>
+fermi should be {{sbgate}}happy now 
+<<cooper>>
+hiya! cooper {{sbgate}}here
+<<armstrong>>
+what up {{sbgate}}gamers
+<<endgate>>
+{{sbopen cooper1 armstrong1}}
+===
+title: cooper1
+tags: 
+colorID: 0
+position: 710,129
+---
+Cooper i choose you!
+{{sbopen armstrong1}}
+===
+title: armstrong1
+tags: 
+colorID: 0
+position: 526,-126
+---
+armstrong i chose you
+{{sbopen cooper1}}
+===

@@ -1,0 +1,1107 @@
+title: Start
+tags: 
+colorID: 0
+position: -389,-1783
+---
+<<playmusic default 1>>
+<<setnpc none>>
+<<dgmode npc>>
+A bleary sun rises over Silica, pale behind cataract clouds. Today, the Mariners are on inspections duty.
+<<setnpc QAseal>>
+"This hardware has passed all quality assurance tests and is ready for operations."
+"Remember: if you want it super, just bring it to {{sbopen jemison1 armstrong1}}Cooper!"
+===
+title: jemison1
+tags: 
+colorID: 0
+position: -273,-1549
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+Coop... why did you stamp that on a fire hydrant{{sbopen cooper1 armstrong1.1}}...
+===
+title: armstrong1
+tags: 
+colorID: 0
+position: -275,-1087
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+bor{{sbopen jemison1.1}}ed.
+===
+title: jemison1.1
+tags: 
+colorID: 0
+position: -26,-1550
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+Coop... why did you stamp that on a fire hydrant{{sbopen cooper1}}...
+===
+title: armstrong1.1
+tags: 
+colorID: 0
+position: -185,-1022
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+bor{{sbopen cooper1}}ed.
+===
+title: cooper1
+tags: 
+colorID: 0
+position: -269,-1322
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+We're enforcing the public trust! 
+The good people of Silica {{sbopen armstrong1.2}}should know that the city waterworks are fully functional.
+[[NPC2]]
+===
+title: NPC2
+tags: 
+colorID: 0
+position: 250,-1788
+---
+<<dgmode npc>>
+<<setnpc doppler holo>>
+(radio) Check in, Mariners. {{sbopen jemison2 cooper2 armstrong2}}How's progress?
+===
+title: armstrong1.2
+tags: 
+colorID: 0
+position: 34,-1083
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+BORED.
+[[NPC2]]
+===
+title: jemison2
+tags: 
+colorID: 0
+position: 367,-1549
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+Halfway down the boardwalk, HertzBreaker.
+If there's a fire... and the ocean isn't available... then the civs here are covered.
+[[NPC3]]
+===
+title: NPC3
+tags: 
+colorID: 0
+position: 637,-1787
+---
+<<dgmode npc>>
+<<setnpc doppler holo>>
+(radio) That is almost criminally behind schedule. {{sbopen cooper3 armstrong3}}What's the hold-up?
+===
+title: armstrong3
+tags: 
+colorID: 0
+position: 771,-1070
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+*Someone* has been doing inspections by the book.
+[[NPC3.1]]
+===
+title: NPC3.1
+tags: 
+colorID: 0
+position: 870,-1785
+---
+<<dgmode npc>>
+<<setnpc doppler holo>>
+(radio) Why would that be a prob{{sbopen armstrong3.2}}lem?
+===
+title: cooper3.1
+tags: 
+colorID: 0
+position: 1207,-1299
+---
+<<setguppy cooper>>
+<<setface angry>>
+<<dgmode player>>
+<<bumpguppy 10>>
+Which wouldn't take so long if *someone* didn't keep rushing {{sbopen jemison3.1}}me!
+===
+title: jemison3.1
+tags: 
+colorID: 0
+position: 1211,-1537
+---
+<<setguppy jemison>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 10>>
+Or if two someones would stop arguing long enough to actually get the job done.
+I swear, at this rate you two are gonna wear out the Switch{{sbopen armstrong3.3}}breaker.
+===
+title: NPC4
+tags: 
+colorID: 0
+position: 1603,-1771
+---
+<<dgmode npc>>
+<<setnpc doppler holo>>
+(radio) Alright, alright, I see what's going on here.
+Ops manual *did* say this much proximity might make my plucky guppies a little dysfunctional.
+I know things have been quiet, but you're not always going to have a crisis to pull you three together!
+<<setnpc none>>
+At that point, a distant figure waves a hand, dripping slime all over the boardwalk.
+<<setnpc civilian>>
+HEY AQUAKNIGHTS! {{sbopen jemison4 cooper4 armstrong4}}YOU NEED TO SEE THIS!
+===
+title: armstrong4
+tags: 
+colorID: 0
+position: 1847,-1066
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+*sorryDopplergottagowehaveacrisistopullustogetherrrr!* Where's the off switch on this thing?
+[[NPC5a]]
+===
+title: NPC5a
+tags: 
+colorID: 0
+position: 2101,-1068
+---
+<<dgmode npc>>
+<<setnpc none>>
+Doppler's voice dwindles to a tinny whine as Armstrong turns the radio's volume to the lowest possible setting.
+[[NPC5.1]]
+===
+title: jemison5
+tags: 
+colorID: 0
+position: 2562,-1533
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+I'm listening...
+[[NPC6]]
+===
+title: NPC6
+tags: 
+colorID: 0
+position: 2857,-1767
+---
+<<dgmode npc>>
+<<setnpc civilian>>
+IT'S GOT A KNIFE!
+<<setnpc none>>
+The boardwalk shakes with panicked footsteps,{{sbopen armstrong6}} as more civilians start to run.
+===
+title: armstrong6
+tags: 
+colorID: 0
+position: 2960,-1060
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+<<bumpguppy 10>>
+Aquaknights, we've got a Code Kni{{sbopen jemison6 cooper6 armstrong6.1}}fe!
+===
+title: cooper6
+tags: 
+colorID: 0
+position: 3081,-1297
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+You made that{{sbopen armstrong6.1}} up!
+===
+title: NPC7
+tags: 
+colorID: 0
+position: 3270,-1775
+---
+<<dgmode npc>>
+<<setnpc none>>
+The Guppy pounds across the street.
+<<playmusic beatup 1>>
+It comes to a screeching halt when the Mariners see the newest visitor{{sbopen jemison7 cooper7 armstrong7}} to Silica's shores.
+===
+title: jemison7
+tags: 
+colorID: 0
+position: 3424,-1528
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+*gasp* It's beautiful.
+[[NPC8]]
+===
+title: cooper7
+tags: 
+colorID: 0
+position: 3426,-1300
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+Hey uh, we're going to need a riot shield and three more sets of cuffs.
+[[NPC8]]
+===
+title: armstrong7
+tags: 
+colorID: 0
+position: 3431,-1059
+---
+<<setguppy armstrong>>
+<<setface curious>>
+<<dgmode player>>
+That's sick.
+[[NPC8]]
+===
+title: NPC8
+tags: 
+colorID: 0
+position: 3674,-1769
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+{{shakenpc 20}}*st{{sbopen armstrong8}}ab*
+===
+title: armstrong8
+tags: 
+colorID: 0
+position: 3809,-1064
+---
+<<setguppy armstrong>>
+<<setface curious>>
+<<dgmode player>>
+I want to wres{{sbopen jemison8}}tle it.
+===
+title: NPC9
+tags: 
+colorID: 0
+position: 3947,-1763
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+<<shakenpc 30>>
+*stab {{sbopen jemison9 cooper9 armstrong9}}stab*
+===
+title: jemison8
+tags: 
+colorID: 0
+position: 3823,-1520
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+I will not {{sbopen armstrong8.1}}allow that.
+===
+title: NPC10
+tags: 
+colorID: 0
+position: 4613,-1746
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+*kchkk...*
+{{shakenpc 40}}*kchkk kchkk kchkk kchkk kchkk kchkk kchkk*
+*AMBUSH TECHNIQUE: CEPHALOPOD {{sbopen jemison10 cooper10 armstrong10}}SALVO*
+===
+title: jemison9
+tags: 
+colorID: 0
+position: 4311,-1514
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+It keeps going back to that spot. What does it want? ...What is it *waiting* for?
+[[NPC10]]
+===
+title: armstrong8.1
+tags: 
+colorID: 0
+position: 3456,-729
+---
+<<setguppy armstrong>>
+<<setface sad>>
+<<dgmode player>>
+Please{{sbopen jemison8.1}}...?{{sbclose}}
+[[NPC9]]
+===
+title: jemison8.1
+tags: 
+colorID: 0
+position: 3674,-734
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+No, {{sbopen armstrong8.2}}Armstrong.
+===
+title: armstrong8.2
+tags: 
+colorID: 0
+position: 3891,-731
+---
+<<setguppy armstrong>>
+<<setface sad>>
+<<dgmode player>>
+pLEE{{sbopen jemison8.2}}EASE...
+===
+title: cooper11
+tags: 
+colorID: 0
+position: 5118,-1278
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+Uhh those weapons are in strict violation of Silica Open Carry laws{{sbopen armstrong11.2}}...
+===
+title: jemison8.2
+tags: 
+colorID: 0
+position: 4113,-729
+---
+<<setguppy jemison>>
+<<setface grumpy>>
+<<dgmode player>>
+No {{sbopen armstrong8.3}}way.
+===
+title: NPC11
+tags: 
+colorID: 0
+position: 4937,-1741
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+*STAB!!*
+<<setnpc glocktopus>>
+*HONOR THE RIVALRY: RESPECTFUL {{sbopen jemison11 cooper11 armstrong11}}RELOAD*
+===
+title: armstrong11.2
+tags: 
+colorID: 0
+position: 5568,-1040
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Well then, what are we waiting for? KNIFE CRAB! GLOCKTOPUS{{sbopen jemison11.2 cooper11.2}}!!!
+===
+title: jemison11.2
+tags: 
+colorID: 0
+position: 5569,-1504
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+When did you name them{{sbopen armstrong11.3}}...?
+===
+title: NPC12
+tags: 
+colorID: 0
+position: 5989,-1727
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+*stab.*
+<<setnpc glocktopus>>
+*VIOLENT RESISTANCE STYLE: TRANSCEND {{sbopen jemison12}}AUTHORITY*
+===
+title: jemison12
+tags: 
+colorID: 0
+position: 6118,-1494
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+Such creatures only obey the law {{sbopen cooper12}}of the sea...{{sbclose}}
+[[NPC13]]
+===
+title: cooper13.2
+tags: 
+colorID: 0
+position: 6988,-1258
+---
+<<setguppy cooper>>
+<<setface baffled>>
+<<dgmode player>>
+<<bumpguppy 10>>
+Armstrong, what are you doing?!
+[[NPC14]]
+===
+title: NPC14
+tags: 
+colorID: 0
+position: 7153,-1727
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+*stab stab stab!*
+<<setnpc glocktopus>>
+*CRIPPLING SHOT: ENDOSKELETONS WERE A {{sbopen jemison14 cooper14 armstrong14}}MISTAKE*
+===
+title: armstrong14
+tags: 
+colorID: 0
+position: 7311,-1020
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 40>>
+ARRGH!
+[[NPC15]]
+===
+title: NPC15
+tags: 
+colorID: 0
+position: 7508,-1727
+---
+<<dgmode npc>>
+<<setnpc doppler holo>>
+(radio, faint) What's going on? {{sbopen cooper15 armstrong15}}I was angry but now I'm worried. Please respond!
+===
+title: cooper15
+tags: 
+colorID: 0
+position: 7712,-1251
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+Couple of rotors are busted... I can repair this if we get back to HQ{{sbopen armstrong15}}...
+===
+title: armstrong15
+tags: 
+colorID: 0
+position: 7719,-1025
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+The fun's just OW OW OW starting! We're not letting them go. You hear that?
+You two might be decked out with fancy gear{{sbopen jemison15}}...
+===
+title: jemison15
+tags: 
+colorID: 0
+position: 7715,-1489
+---
+<<setguppy jemison>>
+<<setface eyeroll>>
+<<dgmode player>>
+That knife is literally held by {{sbopen armstrong15.1}}duct tape.
+===
+title: jemison15.1
+tags: 
+colorID: 0
+position: 8035,-1483
+---
+<<setguppy jemison>>
+<<dgmode player>>
+<<setface curious>>
+You scared them off!
+[[NPC16]]
+===
+title: NPC16
+tags: 
+colorID: 0
+position: 8186,-1713
+---
+<<dgmode npc>>
+<<setnpc knifecrab>>
+*...stab.*
+<<setnpc none>>
+Like a terrible god, assured in its eventual vengeance, Knife Crab scuttles toward the ocean.
+<<setnpc glocktopus>>
+*PURSUIT-RETREAT HYBRID TECHNIQUE: FLEE {{sbopen jemison16 cooper16 armstrong16}}TO THE TIDE*
+===
+title: jemison16
+tags: 
+colorID: 0
+position: 8374,-1481
+---
+<<setguppy jemison>>
+<<setface suspicious>>
+<<dgmode player>>
+We'd be following them into their home turf{{sbopen armstrong16}}...
+===
+title: armstrong16
+tags: 
+colorID: 0
+position: 8375,-1028
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+We can't let them {{sbopen jemison16.1 cooper16.1}}get away!
+===
+title: NPC17
+tags: 
+colorID: 0
+position: 8765,-1702
+---
+<<dgmode npc>>
+<<setnpc none>>
+The Mariners dial the radio back up, as they limp toward a ship abandoned{{sbopen jemison17 cooper17 armstrong17}} in the chaos.
+===
+title: armstrong17
+tags: 
+colorID: 0
+position: 8873,-1022
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Come in, HertzBreaker! We are IN PURSUIT!
+<<restart>>
+===
+title: cooper2
+tags: 
+colorID: 0
+position: 362,-1312
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+We are 37% complete with preliminary inspections! Oceanside fire safety never looked better!
+[[NPC3]]
+===
+title: armstrong2
+tags: 
+colorID: 0
+position: 367,-1081
+---
+<<setguppy armstrong>>
+<<setface confused>>
+<<dgmode player>>
+Uhhh we're somewhere on the boardwalk? That's nearly done, right?
+[[NPC3]]
+===
+title: cooper3
+tags: 
+colorID: 0
+position: 776,-1309
+---
+<<setguppy cooper>>
+<<setface grumpy>>
+<<dgmode player>>
+*Someone* keeps rushing {{sbopen armstrong3.1}}me.
+===
+title: armstrong3.1
+tags: 
+colorID: 0
+position: 990,-1075
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+<<bumpguppy 10>>
+Well, we're behind, so *someone* should have {{sbopen jemison3}}listened!
+===
+title: jemison3
+tags: 
+colorID: 0
+position: 774,-1553
+---
+<<setguppy jemison>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 10>>
+And two someones take twice as much time arguing because they share the same stupid mouth!
+I swear, at this rate you two are gonna wear out the Switch{{sbopen armstrong3.3}}breaker.
+===
+title: armstrong3.2
+tags: 
+colorID: 0
+position: 1209,-1072
+---
+<<setguppy armstrong>>
+<<setface grumpy>>
+<<dgmode player>>
+Exactly. By. The {{sbopen cooper3.1}}book.
+===
+title: armstrong3.3
+tags: 
+colorID: 0
+position: 1429,-1072
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+<<bumpguppy 10>>
+Good! At the very least that'd be exciting!
+[[NPC4]]
+===
+title: jemison4
+tags: 
+colorID: 0
+position: 1847,-1544
+---
+<<setguppy jemison>>
+<<setface wink>>
+<<dgmode player>>
+Sorry, Doppler, I can't hear you over the sound of something more exciting happening somewhere else.
+[[NPC5j]]
+===
+title: cooper4
+tags: 
+colorID: 0
+position: 1839,-1304
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+Um- er- sorry, Doppler, we gotta- I'll include all of this in my report! Oh, how do I turn this thing off?
+[[NPC5c]]
+===
+title: NPC5.1
+tags: 
+colorID: 0
+position: 2378,-1768
+---
+The civilian runs up to them.
+<<setnpc civilian>>
+(breathless) I've never seen anything like it... like a rock that learned the meaning of rage{{sbopen jemison5 cooper5 armstrong5}}...
+===
+title: NPC5c
+tags: 
+colorID: 0
+position: 2113,-1305
+---
+<<dgmode npc>>
+<<setnpc none>>
+Doppler's voice dwindles to a tinny whine as Cooper turns the radio's volume to the lowest possible setting.
+[[NPC5.1]]
+===
+title: NPC5j
+tags: 
+colorID: 0
+position: 2115,-1542
+---
+<<dgmode npc>>
+<<setnpc none>>
+Doppler's voice dwindles to a tinny whine as Jemison turns the radio's volume to the lowest possible setting.
+[[NPC5.1]]
+===
+title: cooper5
+tags: 
+colorID: 0
+position: 2559,-1291
+---
+<<setguppy cooper>>
+<<setface confused>>
+<<dgmode player>>
+Hang on, I gotta write this down... "rock that learned..."
+[[NPC6]]
+===
+title: armstrong5
+tags: 
+colorID: 0
+position: 2563,-1058
+---
+<<setguppy armstrong>>
+<<setface wink>>
+<<dgmode player>>
+If it's harming this city then soon it'll learn the meaning of MY FIST!
+[[NPC6]]
+===
+title: jemison6
+tags: 
+colorID: 0
+position: 3085,-1535
+---
+<<setguppy jemison>>
+<<setface eyeroll>>
+<<dgmode player>>
+That is not a real {{sbopen armstrong6.1}}thing.
+===
+title: armstrong8.3
+tags: 
+colorID: 0
+position: 4328,-731
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+All those in favor of wrestling it raise your hand– oh would you look at that it's unanimous!
+[[NPC9]]
+===
+title: cooper9
+tags: 
+colorID: 0
+position: 4316,-1278
+---
+<<setguppy cooper>>
+<<setface curious>>
+<<dgmode player>>
+It keeps scuttling back to that spot! I think it's trying to tell us something.
+[[NPC10]]
+===
+title: armstrong9
+tags: 
+colorID: 0
+position: 4314,-1055
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Aww, look at it scuttle back and forth! What's that, buddy? Something you want to say?
+[[NPC10]]
+===
+title: jemison11
+tags: 
+colorID: 0
+position: 5122,-1508
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+Why are they fighting {{sbopen cooper11 armstrong11.1}}each other?
+===
+title: armstrong11
+tags: 
+colorID: 0
+position: 5121,-1055
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Oh man, GoobTube is gonna be all over {{sbopen jemison11.1 cooper11}}this.
+===
+title: jemison10
+tags: 
+colorID: 0
+position: 4740,-1522
+---
+<<setguppy jemison>>
+<<setface baffled>>
+<<dgmode player>>
+Where did THIS ONE come from?
+[[NPC11]]
+===
+title: cooper10
+tags: 
+colorID: 0
+position: 4739,-1287
+---
+<<setguppy cooper>>
+<<setface angry>>
+<<dgmode player>>
+That is TOO MANY guns! That is NOT allowed!
+[[NPC11]]
+===
+title: armstrong10
+tags: 
+colorID: 0
+position: 4742,-1053
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+One, I don't know what's happening, but two, it is AWESOME.
+[[NPC11]]
+===
+title: jemison11.1
+tags: 
+colorID: 0
+position: 5252,-1472
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+Why are they fighting {{sbopen cooper11}}each other?
+===
+title: armstrong11.1
+tags: 
+colorID: 0
+position: 5252,-1002
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+Oh man, GoobTube is gonna be all over {{sbopen cooper11}}this.
+===
+title: armstrong11.3
+tags: 
+colorID: 0
+position: 5805,-1042
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+You're under ARREST!
+[[NPC12]]
+===
+title: cooper11.2
+tags: 
+colorID: 0
+position: 5566,-1270
+---
+<<setguppy cooper>>
+<<setface grumpy>>
+<<dgmode player>>
+How come you always get to name {{sbopen armstrong11.3}}stuff?
+===
+title: NPC13
+tags: 
+colorID: 0
+position: 6288,-1731
+---
+<<dgmode npc>>
+<<setnpc glocktopus>>
+<<shakenpc 30>>
+*bang bang bang bang bang {{sbopen jemison13 cooper13 armstrong13}}bang bang bang*
+===
+title: cooper12
+tags: 
+colorID: 0
+position: 6115,-1256
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+What law is THAT?
+[[NPC13]]
+===
+title: armstrong6.1
+tags: 
+colorID: 0
+position: 3179,-1056
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+<<shakeguppy 10>>
+Let's GO!
+[[NPC7]]
+===
+title: jemison13
+tags: 
+colorID: 0
+position: 6427,-1493
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+Let's see if this slows them down.
+[[NPC13j]]
+===
+title: cooper13
+tags: 
+colorID: 0
+position: 6423,-1259
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+I'm radioing for backup! Oh, wow, there actually IS a Code Knife...
+[[NPC13c]]
+===
+title: armstrong13
+tags: 
+colorID: 0
+position: 6429,-1028
+---
+<<setguppy armstrong>>
+<<setface angry>>
+<<dgmode player>>
+You leave me no choice, criminals!
+[[NPC13a]]
+===
+title: NPC13a
+tags: 
+colorID: 0
+position: 6714,-1036
+---
+<<dgmode npc>>
+<<setnpc none>>
+With Armstrong in control, the Guppy plows into the {{sbopen jemison13.2 cooper13.2}}fracas.
+===
+title: NPC13j
+tags: 
+colorID: 0
+position: 6714,-1496
+---
+<<dgmode npc>>
+<<setnpc none>>
+Taking advantage of the street architecture, Jemison starts building a snare trap{{sbopen cooper13.1 armstrong13}}...
+===
+title: NPC13c
+tags: 
+colorID: 0
+position: 6719,-1259
+---
+<<dgmode npc>>
+<<setnpc none>>
+Cooper calls for backup. It'll take a long time coming, but he's prepared to wait{{sbopen jemison13.1 armstrong13}}...
+===
+title: jemison13.1
+tags: 
+colorID: 0
+position: 6552,-777
+---
+<<setguppy jemison>>
+<<setface curious>>
+<<dgmode player>>
+Let's see if this slows them down.
+[[NPC13j.1]]
+===
+title: NPC13j.1
+tags: 
+colorID: 0
+position: 6815,-781
+---
+<<dgmode npc>>
+<<setnpc none>>
+Taking advantage of the street architecture, Jemison starts building a snare trap{{sbopen armstrong13}}...
+===
+title: cooper13.1
+tags: 
+colorID: 0
+position: 6548,-554
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+I'm radioing for backup! Oh, wow, there actually IS a Code Knife...
+[[NPC13c.1]]
+===
+title: NPC13c.1
+tags: 
+colorID: 0
+position: 6814,-552
+---
+<<dgmode npc>>
+<<setnpc none>>
+Cooper calls for backup. It'll take a long time coming, but he's prepared to wait{{sbopen armstrong13}}...
+===
+title: jemison13.2
+tags: 
+colorID: 0
+position: 6980,-1493
+---
+<<setguppy jemison>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 10>>
+DAMMIT, ARMSTRONG!
+[[NPC14]]
+===
+title: cooper14
+tags: 
+colorID: 0
+position: 7308,-1257
+---
+<<setguppy cooper>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 40>>
+ARRGH!
+[[NPC15]]
+===
+title: jemison14
+tags: 
+colorID: 0
+position: 7314,-1487
+---
+<<setguppy jemison>>
+<<setface angry>>
+<<dgmode player>>
+<<shakeguppy 40>>
+ARRGH!
+[[NPC15]]
+===
+title: armstrong15.1
+tags: 
+colorID: 0
+position: 7936,-1032
+---
+<<setguppy armstrong>>
+<<setface happy>>
+<<dgmode player>>
+-but I'm about to introduce you to a good old-fashioned Marbloon {{shakeguppy 40}}PUNCH. {{sbopen jemison15.1 cooper15.1}}...
+===
+title: cooper15.1
+tags: 
+colorID: 0
+position: 8031,-1257
+---
+<<setguppy cooper>>
+<<setface happy>>
+<<dgmode player>>
+They're running!
+[[NPC16]]
+===
+title: cooper16
+tags: 
+colorID: 0
+position: 8371,-1256
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+What do we do {{sbopen armstrong16}}now?
+===
+title: jemison16.1
+tags: 
+colorID: 0
+position: 8589,-1488
+---
+<<setguppy jemison>>
+<<setface confused>>
+<<dgmode player>>
+Then get ready to dive, everyone.
+[[NPC17]]
+===
+title: cooper16.1
+tags: 
+colorID: 0
+position: 8589,-1261
+---
+<<setguppy cooper>>
+<<setface sad>>
+<<dgmode player>>
+No time for repairs, then.
+[[NPC17]]
+===
+title: cooper17
+tags: 
+colorID: 0
+position: 8871,-1258
+---
+<<setguppy cooper>>
+<<setface nervous>>
+<<dgmode player>>
+C-come in, HertzBreaker? We are IN PURSUIT!
+<<restart>>
+===
+title: jemison17
+tags: 
+colorID: 0
+position: 8869,-1487
+---
+<<setguppy jemison>>
+<<setface angry>>
+<<dgmode player>>
+HertzBreaker, do you copy? We are IN PURSUIT!
+<<restart>>
+===

@@ -1,0 +1,27 @@
+title: Start
+tags: 
+colorID: 0
+position: 146,92
+---
+<<dgmode npc>>
+<<setnpc none>>
+<small>Lets see <trail>if this works</trail></small> {{sbopen jemison1}}
+===
+title: armstrong1
+tags: 
+colorID: 6
+position: 420,82
+---
+<<dgmode player>>
+<<setguppy armstrong>>
+<wavy>oooooohhhhhhhh</wavy> look at me{{sbopen jemison1}}!
+===
+title: jemison1
+tags: 
+colorID: 6
+position: 800,82
+---
+<<dgmode player>>
+<<setguppy jemison>>
+i'm{{sbopen armstrong1}} <big><shake>ANGRY!</shake></big>
+===
