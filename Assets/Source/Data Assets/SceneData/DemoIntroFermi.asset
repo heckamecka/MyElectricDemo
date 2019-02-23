@@ -26,4 +26,6 @@ MonoBehaviour:
     dismantle last,{{wait 0.5}}
 
     my electric heart.{{wait 5}} '
+  _caseDescription: gobbity goop this is placeholder description it's some good description
+    for some good slime times
   _yarnScene: {fileID: 4900000, guid: 116137ce49048b043ab53020d14efbb8, type: 3}

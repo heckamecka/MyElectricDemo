@@ -7,7 +7,7 @@ public class MapNode : MonoBehaviour {
     
     [SerializeField] LocationData _locationData;
     [SerializeField] Image _image;
-    [SerializeField] LocationLabel _label;
+    [SerializeField] LocationFile _file;
 
 
     [Header("Debug")]
@@ -30,6 +30,8 @@ public class MapNode : MonoBehaviour {
         }
 
         MapNodeInit();
+        _file._node = this;
+        if (_scene != null) _file.SetText(_scene._sceneName, _scene._sceneDescription);
         ShowLabel(false);
     }
 
@@ -90,7 +92,7 @@ public class MapNode : MonoBehaviour {
     {
         if (_scene != null)
         {
-            MehGameManager.instance.LoadShantyScene(_scene);
+            ShowLabel(true);
             Debug.Log("map node on click called");
         }
     }
@@ -109,11 +111,8 @@ public class MapNode : MonoBehaviour {
 
     public void ShowLabel(bool show)
     {
-        if (_label == null) { Debug.LogError("Lable for map node not set"); return; }
-        _label.ShowLabel(show);
-
-        if (_scene == null) return;
-        _label.SetText(_locationData._locationName + "\n<#000000>" + _scene._sceneName + "</color>");
+        if (_file == null) { Debug.LogError("Lable for map node not set"); return; }
+        _file.ShowLabel(show);
     }
 
     #region Map Init Results

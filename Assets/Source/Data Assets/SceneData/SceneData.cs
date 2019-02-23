@@ -10,7 +10,8 @@ public class SceneData : ScriptableObject {
     public string _sceneName;
     [TextArea(3, 10)]
     [SerializeField] private string _shantyText;
-
+    [TextArea(3, 10)]
+    public string _sceneDescription;
     [SerializeField] private TextAsset _yarnScene;
     
     public string GetShantyText() { return _shantyText; }
