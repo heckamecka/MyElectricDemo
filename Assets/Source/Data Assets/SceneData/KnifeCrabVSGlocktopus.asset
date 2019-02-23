@@ -21,5 +21,6 @@ MonoBehaviour:
     and to slime {{wait 0.5}}we return{{wait 3}}
 
 '
-  _caseDescription: In which an epic showdown occurs by the pier.
+  _sceneDescription: gobbity goop random description text that means nothing to anyone
+    but me
   _yarnScene: {fileID: 4900000, guid: 4d60c248fe4e5a44bbc901ac37922f73, type: 3}

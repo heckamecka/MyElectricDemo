@@ -8,10 +8,11 @@ public class MapNode : MonoBehaviour {
     [SerializeField] LocationData _locationData;
     [SerializeField] Image _image;
     [SerializeField] LocationFile _file;
-
-
+    
     [Header("Debug")]
     [SerializeField] bool _ignoreFirstActivate;
+
+    bool _showFile = false;
 
     // store reference (at least i think its reference) to the scene that should be loaded
     // when the player taps on this node - Michel
@@ -32,7 +33,6 @@ public class MapNode : MonoBehaviour {
         MapNodeInit();
         _file._node = this;
         if (_scene != null) _file.SetText(_scene._sceneName, _scene._sceneDescription);
-        ShowLabel(false);
     }
 
     /// <summary>
@@ -92,27 +92,22 @@ public class MapNode : MonoBehaviour {
     {
         if (_scene != null)
         {
-            ShowLabel(true);
+            ToggleShowFile();
             Debug.Log("map node on click called");
         }
     }
 
-    public void OnPointerEnter()
-    {
-        if (_scene == null) return;
-        ShowLabel(true);
-
-    }
-    public void OnPointerExit()
-    {
-        if (_scene == null) return;
-        ShowLabel(false);
-    }
-
-    public void ShowLabel(bool show)
+    // tells the case file for the scene to show on screen
+    public void ToggleShowFile()
     {
         if (_file == null) { Debug.LogError("Lable for map node not set"); return; }
-        _file.ShowLabel(show);
+        _showFile = !_showFile;
+        _file.ShowLabel(_showFile);
+    }
+
+    public void StartScene()
+    {
+        MehGameManager.instance.LoadShantyScene(_scene);
     }
 
     #region Map Init Results
@@ -140,7 +135,7 @@ public class MapNode : MonoBehaviour {
 
     void ActivateNode()
     {
-
+     
     }
     #endregion
 }
