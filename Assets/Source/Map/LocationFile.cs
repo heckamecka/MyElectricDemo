@@ -8,14 +8,26 @@ using TMPro;
 public class LocationFile : MonoBehaviour {
 
     [SerializeField] Animator anim;
+    [SerializeField] TextMeshProUGUI _caseNumber;
     [SerializeField] TextMeshProUGUI _sceneDescription;
     [SerializeField] Image _startSceneButton;
+    
+    [HideInInspector] public int _index;
+    public LocationFileManager _fileManager { private get; set; }
 
-    [HideInInspector] public MapNode _node;
-
-    public void ShowLabel(bool show)
+    private void Start()
     {
-        // play animation for file to move up
+        // randomly generate a case number
+        string caseNum = "Case #00";
+        for(int i = 0; i < 2; ++i)
+        {
+            caseNum += Random.Range(0, 9).ToString();
+        }
+        _caseNumber.SetText(caseNum);
+    }
+
+    public void SetFileShown(bool show)
+    {
         anim.SetBool("show", show);
         _startSceneButton.raycastTarget = show;
     }
@@ -28,7 +40,7 @@ public class LocationFile : MonoBehaviour {
     // Propagate the start scene command to mapNode
     public void StartScene()
     {
-        _node.StartScene();
+        _fileManager.StartScene(_index);
     }
 
 }

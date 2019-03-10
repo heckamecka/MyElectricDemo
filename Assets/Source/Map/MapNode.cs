@@ -4,25 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MapNode : MonoBehaviour {
-    
+
+    [SerializeField] LocationFileManager _fileManager;
     [SerializeField] LocationData _locationData;
     [SerializeField] Image _image;
-    [SerializeField] LocationFile _file;
     
     [Header("Debug")]
     [SerializeField] bool _ignoreFirstActivate;
 
-    bool _showFile = false;
+    // RunTime Data
+    int _index;
+    bool _highLighted = false;
+    Color _defaultColor;
 
     // store reference (at least i think its reference) to the scene that should be loaded
     // when the player taps on this node - Michel
     SceneData _scene;
 
-    // little helper function to cut down on typing - Michel
+    // little psuedo macro to cut down on typing - Michel
     PersistentData persistent { get { return MehGameManager.instance.persistent; } }
 
     void Start ()
     {
+        _defaultColor = _image.color;
         // Error check on start - Michel
         if (_locationData == null)
         {
@@ -31,9 +35,53 @@ public class MapNode : MonoBehaviour {
         }
 
         MapNodeInit();
-        _file._node = this;
-        if (_scene != null) _file.SetText(_scene._sceneName, _scene._sceneDescription);
+        _index = _fileManager.ReigsterMapNode(this);
     }
+
+
+
+    // When the node is pressed/clicked on by the player - Michel
+    public void OnClick()
+    {
+        if (_scene != null)
+        {
+            SetHighlight(!_highLighted);// toggle highlight
+
+            if (_highLighted) _fileManager.ShowFile(_index);
+            else _fileManager.CloseFile();
+
+            Debug.Log("map node on click called");
+        }
+    }
+
+    // Called from LocationFileManager
+    public void SetHighlight(bool newHighLight)
+    {
+        // dont change anythign if new highlight and old highlight are the same
+        if (_highLighted != newHighLight)
+        {
+            _highLighted = newHighLight;
+
+            if (_highLighted)
+            {
+                Debug.Log("set color to white");
+                _image.color = Color.white;
+            }
+            else
+            {
+                Debug.Log("set color to pink");
+                _image.color = _defaultColor;
+            }
+        }
+
+    }
+
+    public void StartScene()
+    {
+        MehGameManager.instance.LoadShantyScene(_scene);
+    }
+
+    #region Map Init Stuff
 
     /// <summary>
     /// Should called whenever the map scene is loaded in - Michel
@@ -57,7 +105,7 @@ public class MapNode : MonoBehaviour {
         }
 
         // loop through the entire list 
-        for(int i = 1; i < _locationData.SceneCount; ++i)
+        for (int i = 1; i < _locationData.SceneCount; ++i)
         {
             // there is a valid location, so let's use that 
             if (ValidateScene(i))
@@ -72,45 +120,23 @@ public class MapNode : MonoBehaviour {
         GreyOutNode();
 
     }
-    
+
+
     /// <summary>
-    /// Check if a particular scene in the location list is a valid scene to play
+    /// On Init, check if a particular scene in the location list is a valid scene to play
     /// </summary>
     bool ValidateScene(int i)
     {
         // if it's been visited already, return false
         if (persistent.GetSceneVisited(_locationData[i].name)) return false;
-        
+
         // add other conditions in here
 
         // if it passes all the conditions, return true
         return true;
     }
 
-    // When the node is pressed/clicked on by the player - Michel
-    public void OnClick()
-    {
-        if (_scene != null)
-        {
-            ToggleShowFile();
-            Debug.Log("map node on click called");
-        }
-    }
 
-    // tells the case file for the scene to show on screen
-    public void ToggleShowFile()
-    {
-        if (_file == null) { Debug.LogError("Lable for map node not set"); return; }
-        _showFile = !_showFile;
-        _file.ShowLabel(_showFile);
-    }
-
-    public void StartScene()
-    {
-        MehGameManager.instance.LoadShantyScene(_scene);
-    }
-
-    #region Map Init Results
     // node has not been activated at all- Michel
     void HideNode()
     {
@@ -135,7 +161,7 @@ public class MapNode : MonoBehaviour {
 
     void ActivateNode()
     {
-     
+    
     }
     #endregion
 }
