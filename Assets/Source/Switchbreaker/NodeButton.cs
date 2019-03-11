@@ -11,18 +11,21 @@ public class NodeButton : MonoBehaviour {
     private enum NodeStatus {disabled, candidate, agent}
 
     //Tweakables:
+    [Header("Tweakables")]
     [SerializeField] private float _selectionRadius   = 1f;
     [SerializeField] private float _deselectionRadius = 1.2f;
     [SerializeField] private float _maxGravityForce   = 100f;
     [SerializeField] private AudioClip _activationSound;
 
     //Scene References:
+    [Header("Scene References")]
     [SerializeField] private Transform   _selectionOrigin; //The point from which we compare which node is selected
     [SerializeField] private Rigidbody2D _puckBody; //The springy puck body
     [SerializeField] private Image       _image;
     [SerializeField] private Sprite      _agentGraphic;
     [SerializeField] private Sprite      _candidateGraphic;
     [SerializeField] private Sprite      _disabledGraphic;
+    [SerializeField] private RippleParticle _ripple;
 
     public GameObject storage;
     public bool favorActive = true; 
@@ -122,8 +125,10 @@ public class NodeButton : MonoBehaviour {
         }
     }
 
-    public void PlayActivationSound()
+    public void ActivateNode()
     {
         MehGameManager.instance.audioMan.PlayOneShot(_activationSound);
+        _ripple.ActivateRipple();
+        favorActive = true;
     }
 }

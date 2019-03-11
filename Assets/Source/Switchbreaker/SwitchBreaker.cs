@@ -64,8 +64,7 @@ public class SwitchBreaker : MonoBehaviour {
             var node = this._nodes[CharToCharacter(passageName[0])];
 
             // Activate node
-            node.PlayActivationSound();
-            node.favorActive = true;
+            node.ActivateNode();
 
             // Inject delegate
             var cachedPassageName = passageName; //Caching because using foreach variable in lambda is apparently dangerous
@@ -101,8 +100,7 @@ public class SwitchBreaker : MonoBehaviour {
             {
                 var node = _nodes[CharToCharacter(c)];
 
-                node.PlayActivationSound();
-                node.favorActive = true;
+                node.ActivateNode();
                 node.MakeCandidate(() => OnGateSelected(node));
 
                 this.isOpen = true;
