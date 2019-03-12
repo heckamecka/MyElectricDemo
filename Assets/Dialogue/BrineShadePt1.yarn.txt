@@ -1,7 +1,7 @@
-title: Start
+title: OldStart
 tags: 
 colorID: 2
-position: -3052,-3862
+position: -3127,-4463
 ---
 <<setnpc kirkwood stressed>>
 <<setspeaker kirkwood>>
@@ -10,10 +10,10 @@ Well batter my aft and call me a cod-
 You must be Fermi's new crew. 
 Ready for a good ol fashioned {{sbopen jemison2}}stakeout?
 ===
-title: jemison2
+title: Oldjemison2
 tags: 
 colorID: 0
-position: -2811,-3638
+position: -2883,-4220
 ---
 <<setface angry>>
 This is a waste of time. 
@@ -31,28 +31,28 @@ YOUNG ENOUGH TO SHOTGUN A BEER, FALL ASLEEP ON THE FLOOR, AND NOT WAKE UP WITH {
 <<endgate>> 
 {{sbopen jemison3}}
 ===
-title: jemison3
+title: Oldjemison3
 tags: 
 colorID: 0
-position: -2559,-3636
+position: -2634,-4237
 ---
 <<setface grumpy>>
 Haven’t you dolts heard of the Observer Effect? 
 Just observing a phenomenon necessarily changes the {{sbopen cooper4}}outcome.
 ===
-title: cooper4
+title: Oldcooper4
 tags: 
 colorID: 0
-position: -2334,-3414
+position: -2407,-4016
 ---
 <<setface nervous>>
 Er, to my understanding, 
 the Observer Effect mostly applies to situations <trail>involving specialized{{sbopen jemison5}} measurement instruments-</trail>
 ===
-title: jemison5
+title: Oldjemison5
 tags: 
 colorID: 0
-position: -2080,-3638
+position: -2155,-4239
 ---
 <<setface angry>>
 <<shakeguppy 30>>
@@ -65,7 +65,7 @@ and I’ll end up making shit up, and looking stupid when you inevitably fact ch
 title: HadfieldTestStart
 tags: 
 colorID: 1
-position: -3233,-3513
+position: -3127,-4227
 ---
 <<playmusic newsUrgent1 0>>
 <<setnpc hadfield suave>>
@@ -75,4 +75,138 @@ BEE BEE BEEP ITS ME
 HADFIELD!!!!!
 <<playmusic newsUrgent2 0>>
 
+===
+title: Start
+tags: 
+colorID: 0
+position: -3074,-3022
+---
+<<playmusic default 0>>
+<<setguppy none>>
+Mud like bubblegum saps and stickies on metal boots. 
+Today is the Aquaknights’ first day on the job!
+Valves weeze, pressure outlets hiss. Something like a breath.
+<<setguppy>>
+{{sbopen jemison1 cooper1 armstrong1}}
+
+===
+title: jemison1
+tags: 
+colorID: 0
+position: -2777,-3023
+---
+<<setface smooch>>
+a milky sunrise over a curdled sea. 
+{{sbopen jemison2 cooper2 armstrong2}}
+===
+title: cooper1
+tags: 
+colorID: 0
+position: -2780,-2796
+---
+<<setface nervous>>
+I can feel my innards pickling. 
+{{sbopen jemison2 cooper2 armstrong2}}
+===
+title: armstrong1
+tags: 
+colorID: 0
+position: -2779,-2575
+---
+<<setface happy>>
+AH. YES. LIKE GETTING PUNCHED IN THE FACE BY A BOTTLE OF WORCESTER SAUCE.
+{{sbopen jemison2 cooper2 armstrong2}}
+===
+title: jemison2
+tags: 
+colorID: 0
+position: -2484,-3015
+---
+<<setface curious>>
+each daybreak is like 
+cracking open a fresh can of sardines.
+[[fermi3]]
+===
+title: cooper2
+tags: 
+colorID: 0
+position: -2485,-2795
+---
+<<setface nervous>>
+This is the kind of stench that can chip paint... 
+<<setface confused>>
+Oh god. The planet is literally trying to eat us. 
+[[fermi3]]
+===
+title: armstrong2
+tags: 
+colorID: 0
+position: -2486,-2563
+---
+<<setface curious>>
+LIKE…
+<<setface happy>>
+IF “SALT AND VINEGAR CHIPS” WAS AN EMOTION.
+[[fermi3]]
+===
+title: fermi3
+tags: 
+colorID: 0
+position: -2230,-3260
+---
+<<setnpc fermi holo happy>>
+<<shakenpc 40>>
+Rise and slime, Aquaknights!!!
+{{sbopen armstrong4}}
+<<setnpc fermi smug>>
+Another day, another municipally subsidized adventure! 
+{{sbopen armstrong4 jemison6 cooper6}}
+===
+title: armstrong4
+tags: 
+colorID: 0
+position: -1968,-2558
+---
+<<setface happy>>
+HIYA BOSS.
+[[fermi4]]
+===
+title: jemison6
+tags: 
+colorID: 0
+position: -1515,-3037
+---
+Empty Text
+===
+title: cooper6
+tags: 
+colorID: 0
+position: -1514,-2812
+---
+Empty Text
+===
+title: fermi4
+tags: 
+colorID: 0
+position: -1988,-3258
+---
+<<setnpc fermi shock>>
+I am not your boss!!! 
+<<setnpc fermi smirk>>
+Bosses are leeches upon the great slimy hide of the Hummer workforce!!!
+...
+<<setnpc fermi shock>>
+Also bosses typically get paid.
+<<setnpc fermi smug>>
+Anyway- 
+<<setspeaker none>>
+Fermi checks their notes. Or at least pretends to. 
+[[fermi5]]
+===
+title: fermi5
+tags: 
+colorID: 0
+position: -1738,-3256
+---
+Empty Text
 ===
