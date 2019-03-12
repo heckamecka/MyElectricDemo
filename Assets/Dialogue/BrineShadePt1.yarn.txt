@@ -1,4 +1,4 @@
-title: Start
+title: TrueStart
 tags: 
 colorID: 2
 position: -3052,-3862
@@ -61,4 +61,18 @@ position: -2080,-3638
 Don’t make me explain quantum mechanics!... 
 Because you’re pushing the boundaries of my confident understanding 
 and I’ll end up making shit up, and looking stupid when you inevitably fact check me. 
+===
+title: Start
+tags: 
+colorID: 1
+position: -3233,-3513
+---
+<<playmusic newsUrgent1 0>>
+<<setnpc hadfield suave>>
+<<setspeaker hadfield>>
+<<newson test>>
+BEE BEE BEEP ITS ME
+HADFIELD!!!!!
+<<playmusic newsUrgent2 0>>
+
 ===
