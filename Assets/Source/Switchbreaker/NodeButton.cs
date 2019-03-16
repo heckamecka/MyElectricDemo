@@ -8,7 +8,7 @@ using UnityEngine.UI;
 // TODO: Comment script for what functions do - Michel
 public class NodeButton : MonoBehaviour {
     //Types:
-    private enum NodeStatus {disabled, candidate, agent}
+    private enum NodeStatus {disabled, candidate, agent}// dusabled - cannot be interacted with     candidate - can be interacted with     agent - currently engaged
 
     //Tweakables:
     [Header("Tweakables")]
@@ -28,7 +28,8 @@ public class NodeButton : MonoBehaviour {
     [SerializeField] private RippleParticle _ripple;
 
     public GameObject storage;
-    public bool favorActive = true; 
+    public bool favorActive = true;
+    public bool activatedBeforeEndOfLine = false;
 
     private Action _onSelected;
     private Action _onDeselected;
@@ -65,31 +66,21 @@ public class NodeButton : MonoBehaviour {
     }
 
     public void MakeCandidate(Action becomeAgentAction){
-        if (this._status != NodeStatus.agent) 
-        this.setStatus(NodeStatus.candidate);
+        if (this._status != NodeStatus.agent)
+        {
+            this.setStatus(NodeStatus.candidate);
+        }
         this._onSelected = becomeAgentAction;
     }
-
-    // TODO: Rework this to move functionality into storage class - Michel
+    
     public void MakeAgent(Action deselectAction)
     {
         this.setStatus(NodeStatus.agent);
-        if (favorActive)
-        {
-            if (gameObject.tag == "JEMISON")
-            {
-                storage.GetComponent<MehVariableStorage>().J_favor = storage.GetComponent<MehVariableStorage>().J_favor + 1;
-            }
-            else if (this.gameObject.tag == "COOPER")
-            {
-                storage.GetComponent<MehVariableStorage>().C_favor = storage.GetComponent<MehVariableStorage>().C_favor + 1;
-            }
-            else if (this.gameObject.tag == "ARMSTRONG")
-            {
-                storage.GetComponent<MehVariableStorage>().A_favor = storage.GetComponent<MehVariableStorage>().A_favor + 1;
-            }
-            favorActive = false; 
-        }
+        this._onDeselected = deselectAction;
+    }
+
+    public void OverrideOnDeselected(Action deselectAction)
+    {
         this._onDeselected = deselectAction;
     }
 
@@ -130,5 +121,11 @@ public class NodeButton : MonoBehaviour {
         MehGameManager.instance.audioMan.PlayOneShot(_activationSound);
         _ripple.ActivateRipple();
         favorActive = true;
+        activatedBeforeEndOfLine = true;
+    }
+
+    public void EndOfLineReached()
+    {
+        activatedBeforeEndOfLine = false;
     }
 }

@@ -128,7 +128,8 @@ public class MehDialogueMachine : MonoBehaviour {
                     stringProgress++;
                 }
 
-                //Tick down the dialogue timer, unless we're frozen:
+                // Tick down the dialogue timer, unless we're frozen (due to it being Guppy Dialogue and the
+                // the player isn't engaging the switch breaker):
                 if (!this.shouldBeFrozen)
                 {
                     t -= Time.deltaTime * timeScale;
@@ -157,10 +158,9 @@ public class MehDialogueMachine : MonoBehaviour {
         // SB is open, chill out until the player makes a selection - Michel
         if (_switchBreaker.isOpen)
         {
-            // TODO: fix this hacky way to close current node
-            if (_switchBreaker.isEngaged)
+            if (_switchBreaker.isEngaged) // if it is engaged, the last line that was just run was a Guppy line, so try to try to close it
             {
-                _switchBreaker.CloseNode(activeGuppy);
+                _switchBreaker.EndOfLineCloseNode(activeGuppy);
             }
 
             while (_switchBreaker.isOpen)

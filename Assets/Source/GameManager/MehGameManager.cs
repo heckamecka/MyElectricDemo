@@ -105,9 +105,8 @@ public class MehGameManager : MonoBehaviour {
     IEnumerator CO_GenericLoadScene(string sceneName)
     {
         OnFadeBegin();
-
-        yield return fade.CO_FadeToBlack(3);
-        // fade out music as well?
+            
+        yield return fade.CO_FadeToBlack(2);
 
         yield return new WaitForSeconds(2);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);

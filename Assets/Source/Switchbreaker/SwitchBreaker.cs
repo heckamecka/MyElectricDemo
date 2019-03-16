@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 
 public class SwitchBreaker : MonoBehaviour {
     [SerializeField] private MehDialogueMachine _dialogue;
@@ -21,6 +21,8 @@ public class SwitchBreaker : MonoBehaviour {
     public bool isEngaged { get; private set; } //Whether the player is currently engaging a node (false if the player's removed their finger from the screen)
 
     private Dictionary<Guppy, NodeButton> _nodes;
+
+    private Action cachedAction;
 
     public void Initialize()
     {
@@ -61,20 +63,39 @@ public class SwitchBreaker : MonoBehaviour {
             if (!"jca".Contains(passageName[0])) throw new System.Exception("Error! Each parameter of sbopen must begin with a j, c, or a");
 
             // Get the correct node based on first character of passage name
-            var node = this._nodes[CharToCharacter(passageName[0])];
+            var node = this._nodes[CharToGuppy(passageName[0])];
 
             // Activate node
             node.ActivateNode();
 
             // Inject delegate
             var cachedPassageName = passageName; //Caching because using foreach variable in lambda is apparently dangerous
-            node.MakeCandidate(() => this.onCandidateSelected(node, cachedPassageName));
+
+            
+            if (!node._selected)
+            {
+                node.MakeCandidate(() => this.OnCandidateSelected(node, cachedPassageName));
+            }
+            else
+            {
+                // if the node is currently selected and we're engaged, cache the action, and instead override deselect action to re-inject the cached OnCandidateSelected action
+                cachedAction = () => this.OnCandidateSelected(node, cachedPassageName);
+                node.OverrideOnDeselected(() => this.ReinjectCachedAction(node));
+            }
 
             this.isOpen = true;
 
             yield return new WaitForSeconds(_activationSFXDelay);
         }
         MehGameManager.instance.audioMan.PlayOneShot(_activationClick);
+    }
+
+    // called on node button deslected
+    public void ReinjectCachedAction(NodeButton deselected)
+    {
+        deselected.MakeDisabled(); //TODO: We disable the button before making it a candidate as a cheap hack to reset some values. Fix this shit, Brendan
+        deselected.MakeCandidate(cachedAction);
+        this.isEngaged = false;
     }
 
     /// <summary>
@@ -98,7 +119,8 @@ public class SwitchBreaker : MonoBehaviour {
         {
             if (gateInstr.HasBlock(c))
             {
-                var node = _nodes[CharToCharacter(c)];
+                Debug.Log(c);
+                var node = _nodes[CharToGuppy(c)];
 
                 node.ActivateNode();
                 node.MakeCandidate(() => OnGateSelected(node));
@@ -111,8 +133,8 @@ public class SwitchBreaker : MonoBehaviour {
         MehGameManager.instance.audioMan.PlayOneShot(_activationClick);
     }
     
-    private void onCandidateSelected(NodeButton selected, string targetPassage)
-    {   
+    private void OnCandidateSelected(NodeButton selected, string targetPassage)
+    {
         var oldCharacter = this._dialogue.activeGuppy;
         var newCharacter = selected.identifier;
         
@@ -135,8 +157,9 @@ public class SwitchBreaker : MonoBehaviour {
 
         this.isOpen = false;
         this.isEngaged = true;
-        foreach (var n in this._nodes.Values)
+        foreach (var n in this._nodes.Values) {
             n.MakeDisabled();
+        }
         selected.MakeAgent(() => this.onAgentDeselected(selected));
         _dialogue.ChooseGate(newCharacter);
     }
@@ -173,14 +196,24 @@ public class SwitchBreaker : MonoBehaviour {
         this.isEngaged = false;
     }
 
-    // 
-    public void CloseNode(Guppy chara)
+    // Close Node called at the end of a dialogue line
+    public void EndOfLineCloseNode(Guppy chara)
     {
         if (CharacterIsGuppy(chara))
         {
-            _nodes[chara].MakeDisabled();
+            if (!_nodes[chara].activatedBeforeEndOfLine) // if the node was activated during the line, don't close it
+            {
+                _nodes[chara].MakeDisabled();
+            }
         }
         else Debug.LogError("attempted to close node with unrecognized identifier [" + chara + "]");
+
+        // clear out "activatedBeforeEndOfLine", since we have reached end of line
+        foreach(var node in _nodes)
+        {
+            node.Value.EndOfLineReached();
+        }
+
     }
 
     // I should probably move these two functions to somewhere that makes more sense - Michel
@@ -192,7 +225,7 @@ public class SwitchBreaker : MonoBehaviour {
             character == Guppy.COOPER);
     }
 
-    public Guppy CharToCharacter(char c)
+    public Guppy CharToGuppy(char c)
     {
         switch (c)
         {

@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour {
 
     AudioSource currentPlayer;
 
+    Coroutine currentCO;
+
     float cachedMusicVol = 1.0f;
     
 	void Start () {
@@ -28,11 +30,13 @@ public class AudioManager : MonoBehaviour {
 
     public void PlayMusic(AudioClip clip, float time)
     {
-        StartCoroutine(CO_Transition(clip, time / 2.0f));
+        if (currentCO != null) StopCoroutine(currentCO);
+        StartCoroutine(CO_Transition(clip, time));
     }
 
-    void FadeOutMusic(float time)
+    public void FadeOutMusic(float time)
     {
+        if (currentCO != null) StopCoroutine(currentCO);
         StartCoroutine(CO_StopMusic(time));
     }
 
@@ -46,8 +50,9 @@ public class AudioManager : MonoBehaviour {
         cachedMusicVol = 0.0f;
     }
 
-    IEnumerator CO_Transition(AudioClip clip, float halftime)
+    IEnumerator CO_Transition(AudioClip clip, float time)
     {
+        float halftime = time / 2f;
         for (float vol = halftime; vol > 0; vol -= Time.deltaTime)
         {
             cachedMusicVol = vol / halftime;

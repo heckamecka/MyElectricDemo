@@ -145,12 +145,12 @@ public class MehDialogueRunner : MonoBehaviour {
             // keep running the nodes while there's still a next one - Michel
         } while (_nextNode != null);
 
-        // TODO: Add OnDialogueEnd
+        // TODO: Add OnDialogueEnd delegate
 
         //Debug.Log("Dialogue Ended");
 
         // fade out music
-        
+        MehGameManager.instance.audioMan.FadeOutMusic(4f);
 
         // Set current scene as visited
         if (_sceneDataCache != null)
