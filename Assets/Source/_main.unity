@@ -4043,33 +4043,19 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1487388487480548, guid: ed10b6336e0eefd42b2aad7419b8906c, type: 2}
+      propertyPath: m_Name
+      value: NPCSlot Left1
+      objectReference: {fileID: 0}
     - target: {fileID: 114895842313338134, guid: ed10b6336e0eefd42b2aad7419b8906c,
         type: 2}
       propertyPath: resources
       value: 
       objectReference: {fileID: 903534744}
-    - target: {fileID: 1487388487480548, guid: ed10b6336e0eefd42b2aad7419b8906c, type: 2}
-      propertyPath: m_Name
-      value: NPCSlot Left1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1487388487480548, guid: ed10b6336e0eefd42b2aad7419b8906c, type: 2}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 224491070338477898, guid: ed10b6336e0eefd42b2aad7419b8906c,
         type: 2}
       propertyPath: m_LocalScale.x
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224491070338477898, guid: ed10b6336e0eefd42b2aad7419b8906c,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224491070338477898, guid: ed10b6336e0eefd42b2aad7419b8906c,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed10b6336e0eefd42b2aad7419b8906c, type: 2}
@@ -4593,8 +4579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hightlightTransitionDuration: 0.2
-  saturatedColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+  desaturatedColor: {r: 0.6156863, g: 0.6156863, b: 0.6156863, a: 1}
   unhighlightedScale: 0.9
+  unhighlightedTranslation: -70
   resources: {fileID: 903534744}
   characterImage: {fileID: 1730007551}
   characterGroup: {fileID: 1730007554}
@@ -6868,16 +6855,6 @@ Prefab:
       propertyPath: resources
       value: 
       objectReference: {fileID: 903534744}
-    - target: {fileID: 224040575749742796, guid: ed10b6336e0eefd42b2aad7419b8906c,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224040575749742796, guid: ed10b6336e0eefd42b2aad7419b8906c,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed10b6336e0eefd42b2aad7419b8906c, type: 2}
   m_IsPrefabParent: 0

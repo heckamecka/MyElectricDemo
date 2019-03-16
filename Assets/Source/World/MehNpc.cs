@@ -8,8 +8,9 @@ public class MehNpc : MonoBehaviour
     [Header("Highlight")]
     [SerializeField]
     private float hightlightTransitionDuration = 0.3f;
-    [SerializeField] private Color saturatedColor;
+    [SerializeField] private Color desaturatedColor;
     [SerializeField] private float unhighlightedScale = 0.7f;
+    [SerializeField] private float unhighlightedTranslation = 70f;
 
     [Header("Components")]
     [SerializeField] protected MehResourceLookups resources;
@@ -22,16 +23,21 @@ public class MehNpc : MonoBehaviour
     // TODO: possibly want to make it so that you can change the defauly scaling size in yarn
     // maybe we want the guppy to look puny or massive next to some special sized npc - Michel
     private Vector3 originalScale;
+    private Vector3 originalPosition;
+    private Vector3 unhighlightedPosition;
 
 
-    private void Start()
+    public void Start()
     {
-        // setting the original scale
+        // setting the original transform
         originalScale = transform.localScale;
+        originalPosition = characterImage.transform.localPosition;
+        unhighlightedPosition = originalPosition+ new Vector3(unhighlightedTranslation * transform.localScale.x, 0f);
 
         // setting initial to unhighlighted
         transform.localScale = originalScale * unhighlightedScale;
-        characterImage.color = saturatedColor;
+        characterImage.color = desaturatedColor;
+        characterImage.transform.localPosition = unhighlightedPosition;
 
     }
 
@@ -83,19 +89,38 @@ public class MehNpc : MonoBehaviour
         characterImage.material = mat;
     }
 
-    public void HighlightCharacter()
+    public virtual void HighlightCharacter()
     {
         StartCoroutine(CO_ShiftSaturation(Color.white, hightlightTransitionDuration));
         StartCoroutine(CO_ShiftScale(1.0f, hightlightTransitionDuration));
+        StartCoroutine(CO_ShiftPosition(originalPosition, hightlightTransitionDuration));
     }
 
-    public void UnHighlightCharacter()
+    public virtual void UnHighlightCharacter()
     {
-        StartCoroutine(CO_ShiftSaturation(saturatedColor,  hightlightTransitionDuration));
+        StartCoroutine(CO_ShiftSaturation(desaturatedColor,  hightlightTransitionDuration));
         StartCoroutine(CO_ShiftScale(unhighlightedScale,  hightlightTransitionDuration));
+        StartCoroutine(CO_ShiftPosition(unhighlightedPosition, hightlightTransitionDuration));
     }
 
-    IEnumerator CO_ShiftSaturation(Color target, float duration)
+    protected virtual IEnumerator CO_ShiftPosition(Vector3 target, float duration)
+    {
+        Vector3 start = characterImage.transform.localPosition;
+        float timer = 0.0f;
+        float timelimit = duration;
+        float f = 0.0f;
+        while (timer < timelimit)
+        {
+            //Debug.Log(gameObject.name + " is moving " + obj.name);
+
+            timer += Time.deltaTime;
+            f = timer / timelimit;
+            characterImage.transform.localPosition = Vector3.Lerp(start, target, f);
+            yield return null;
+        }
+    }
+
+    protected IEnumerator CO_ShiftSaturation(Color target, float duration)
     {
         Color start = characterImage.color;
         float timer = 0.0f;

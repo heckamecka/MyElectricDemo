@@ -27,6 +27,12 @@ public class MehGuppy : MehNpc {
     private string currentGuppy;
     private string currentFace;
 
+    public void Start()
+    {
+        base.Start();
+        auraImage.transform.localPosition = characterImage.transform.localPosition;
+    }
+
     // SETTING GRAPHICS FOR GUPPY, AURA, AND FACE
     #region Setting Graphics
 
@@ -106,6 +112,35 @@ public class MehGuppy : MehNpc {
     {
         SetGraphics(currentGuppy);
         SetFace(currentFace);
+    }
+
+    #endregion
+
+    // OVERRIDE LOGIC FOR UN/HIGHLIGHTING
+    #region Un/Highlight
+
+    protected override IEnumerator CO_ShiftPosition(Vector3 target, float duration)
+    {
+        Vector3 start = characterImage.transform.localPosition;
+        float timer = 0.0f;
+        float timelimit = duration;
+        float f = 0.0f;
+        while (timer < timelimit)
+        {
+            //Debug.Log(gameObject.name + " is moving " + obj.name);
+
+            timer += Time.deltaTime;
+            f = timer / timelimit;
+            characterImage.transform.localPosition = Vector3.Lerp(start, target, f);
+            auraImage.transform.localPosition = characterImage.transform.localPosition;
+            yield return null;
+        }
+    }
+
+    public override void UnHighlightCharacter()
+    {
+        base.UnHighlightCharacter();
+        SetAura("none");
     }
 
     #endregion
