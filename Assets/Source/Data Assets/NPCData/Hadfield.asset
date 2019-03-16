@@ -14,7 +14,7 @@ MonoBehaviour:
   lookup: hadfield
   characterName: HADFIELD
   graphic: {fileID: 21300000, guid: 5eb67d0f0a05b4c469add8b1c07c06ce, type: 3}
-  faceOffset: {x: 87, y: 135}
+  faceOffset: {x: 91, y: 127}
   defaultFace: {fileID: 21300000, guid: cad960abd7706ae4ab441f9d1da9b1c6, type: 3}
   faces:
     keys:

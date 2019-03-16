@@ -65,16 +65,18 @@ and I’ll end up making shit up, and looking stupid when you inevitably fact ch
 title: HadfieldTestStart
 tags: 
 colorID: 1
-position: -3127,-4227
+position: -2906,-6122
 ---
-<<playmusic newsUrgent1 0>>
-<<setnpc hadfield suave>>
-<<setspeaker hadfield>>
+<<playmusic newsUrgent1 3>>
+<<setnpc none>>
+<<setguppy none>>
+Suddenly, Hadfield-
+<<setnpc hadfield triumph>>
 <<newson test>>
-BEE BEE BEEP ITS ME
-HADFIELD!!!!!
-<<playmusic newsUrgent2 0>>
-
+<<shakenpc 40>>
+BREAKING NEWS!!!
+<<setnpc hadfield suave>>
+{{sbopen jemisonHad cooperHad armstrongHad}}
 ===
 title: Start
 tags: 
@@ -165,7 +167,7 @@ Another day, another municipally subsidized adventure!
 title: armstrong4
 tags: 
 colorID: 0
-position: -1968,-2558
+position: -1995,-2564
 ---
 <<setface happy>>
 HIYA BOSS.
@@ -176,14 +178,16 @@ tags:
 colorID: 0
 position: -1515,-3037
 ---
-Empty Text
+you want us to take care of it?
+[[fermi7]]
 ===
 title: cooper6
 tags: 
 colorID: 0
-position: -1514,-2812
+position: -1514,-2808
 ---
-Empty Text
+Yikes. You want us to look into it?
+[[fermi7]]
 ===
 title: fermi4
 tags: 
@@ -208,5 +212,74 @@ tags:
 colorID: 0
 position: -1738,-3256
 ---
+There’s an oil leakage at the docks, a hermit crab infestation in the Brawliseum, and a power outage in {{sbopen jemison6 cooper6}}Wayland Alley-
+===
+title: fermi7
+tags: 
+colorID: 0
+position: -1282,-3258
+---
+What? No. 
+Oh god no, that’s all business as usual. 
+I’ve got something weirder in mind {{sbopen jemison8 cooper8 armstrong8}}for you three.
+===
+title: Node141
+tags: 
+colorID: 0
+position: -1042,-2583
+---
 Empty Text
+===
+title: Node142
+tags: 
+colorID: 0
+position: -1043,-2809
+---
+Empty Text
+===
+title: Node143
+tags: 
+colorID: 0
+position: -1055,-3035
+---
+Empty Text
+===
+title: jemisonHad
+tags: 
+colorID: 0
+position: -2591,-5891
+---
+<<setface grumpy>>
+WHO ARE YOU AND WHY ARE YOU SCREAMING
+[[hadfield1]]
+===
+title: cooperHad
+tags: 
+colorID: 0
+position: -2585,-5665
+---
+<<setface grumpy>>
+WHO ARE YOU AND WHY ARE YOU SCREAMING
+[[hadfield1]]
+===
+title: armstrongHad
+tags: 
+colorID: 0
+position: -2578,-5436
+---
+<<setface grumpy>>
+WHO ARE YOU AND WHY ARE YOU SCREAMING
+[[hadfield1]]
+===
+title: hadfield1
+tags: 
+colorID: 0
+position: -2310,-6114
+---
+<<setspeaker hadfield disgust>>
+Hey now, chief no need to snap your cap.
+<<setspeaker hadfield suave>>
+It’s me, Hadfield! The snoop with the scoop, the lorry with the story.
+<<setspeaker hadfield happy>>
+Media darling and muckraker extraordinaire!
 ===
