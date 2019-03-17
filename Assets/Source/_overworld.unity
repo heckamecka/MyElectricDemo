@@ -1789,12 +1789,6 @@ Prefab:
       propertyPath: m_Name
       value: Pier
       objectReference: {fileID: 0}
-    - target: {fileID: 114602392905599844, guid: bf940b6662821c14cab3c845c4d22133,
-        type: 2}
-      propertyPath: _locationData
-      value: 
-      objectReference: {fileID: 11400000, guid: 08d7e53ca9fc8094c85dd8ee5dad4c68,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf940b6662821c14cab3c845c4d22133, type: 2}
   m_IsPrefabParent: 0

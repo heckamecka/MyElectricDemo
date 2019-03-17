@@ -8,14 +8,14 @@ public class MapNode : MonoBehaviour {
     [SerializeField] LocationFileManager _fileManager;
     [SerializeField] LocationData _locationData;
     [SerializeField] Image _image;
-    
+    [SerializeField] Animator _nodeAnim;
+
     [Header("Debug")]
     [SerializeField] bool _ignoreFirstActivate;
 
     // RunTime Data
     int _index;
-    bool _highLighted = false;
-    Color _defaultColor;
+    bool _highlighted = false;
 
     // store reference (at least i think its reference) to the scene that should be loaded
     // when the player taps on this node - Michel
@@ -26,7 +26,6 @@ public class MapNode : MonoBehaviour {
 
     void Start ()
     {
-        _defaultColor = _image.color;
         // Error check on start - Michel
         if (_locationData == null)
         {
@@ -45,9 +44,9 @@ public class MapNode : MonoBehaviour {
     {
         if (_scene != null)
         {
-            SetHighlight(!_highLighted);// toggle highlight
+            SetHighlight(!_highlighted);// toggle highlight
 
-            if (_highLighted) _fileManager.ShowFile(_index);
+            if (_highlighted) _fileManager.ShowFile(_index);
             else _fileManager.CloseFile();
 
             Debug.Log("map node on click called");
@@ -58,20 +57,12 @@ public class MapNode : MonoBehaviour {
     public void SetHighlight(bool newHighLight)
     {
         // dont change anythign if new highlight and old highlight are the same
-        if (_highLighted != newHighLight)
+        if (_highlighted != newHighLight)
         {
-            _highLighted = newHighLight;
+            _highlighted = newHighLight;
 
-            if (_highLighted)
-            {
-                Debug.Log("set color to white");
-                _image.color = Color.white;
-            }
-            else
-            {
-                Debug.Log("set color to pink");
-                _image.color = _defaultColor;
-            }
+            _nodeAnim.SetBool("highlighted", _highlighted);
+
         }
 
     }

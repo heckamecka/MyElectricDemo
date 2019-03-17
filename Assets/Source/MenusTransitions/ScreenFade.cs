@@ -31,7 +31,7 @@ public class ScreenFade : MonoBehaviour {
 
     #endregion
 
-    void Start () {
+    void Awake () {
         // set up fade image to transparent as default - michel
         canvas.alpha = 0.0f;
         // set up coroutine - michel
@@ -51,12 +51,23 @@ public class ScreenFade : MonoBehaviour {
     /// <summary>
     /// Fade to black, sorting layer 3(i.e. covers everything except for credits) - Michel
     /// </summary>
-    ///     /// <param name="fadeTime"> the time it takes to go from completely transparent to completely black </param>
+    /// <param name="fadeTime"> the time it takes to go from completely transparent to completely black </param>
     public void FadeToBlack(float fadeTime)
     {
         //Debug.Log("Fade out called");
         if (_fadeCoroutine != null) StopCoroutine(_fadeCoroutine);
         _fadeCoroutine = StartCoroutine(CO_FadeToBlackHelper(fadeTime));
+    }
+
+    /// <summary>
+    /// Fade from black, setting the screen to pitch black before hand
+    /// </summary>
+    /// <param name="fadeTime"> the time it takes to go from completely black to completely transparent </param>
+    public void FadeFromBlackActually(float fadeTime)
+    {
+        if (_fadeCoroutine != null) StopCoroutine(_fadeCoroutine);
+        canvas.alpha = 1.0f;
+        _fadeCoroutine = StartCoroutine(CO_FadeFromBlackHelper(fadeTime));
     }
 
     public IEnumerator CO_FadeToBlack(float fadeTime)
@@ -72,17 +83,17 @@ public class ScreenFade : MonoBehaviour {
     IEnumerator CO_FadeFromBlackHelper(float fadeTime)
     {
         // set up - Michel
-        //Debug.Log(color);
-        // fade loop - Michel
+        //Debug.Log(canvas.alpha);
         float percentage = 1-canvas.alpha;
         float elapsed = percentage * fadeTime;
+        // fade loop - Michel
         while (canvas.alpha > 0.01f)
         {
             //Debug.Log("fade loop running");
             elapsed += Time.deltaTime;
             percentage = elapsed / fadeTime;
             canvas.alpha = Mathf.Lerp(1.0f, 0.0f, percentage);
-            //Debug.Log(color);
+            //Debug.Log(canvas.alpha);
             yield return null;
         }
         canvas.blocksRaycasts = false;
@@ -92,10 +103,9 @@ public class ScreenFade : MonoBehaviour {
     {
         canvas.blocksRaycasts = true;
         // set up - Michel
-        // if fading in
         float percentage = canvas.alpha;
         float elapsed = percentage * p_fadeTime;
-        //Debug.Log(color);
+
         // fade loop - Michel
         while (canvas.alpha < 0.99f)
         {
@@ -103,7 +113,6 @@ public class ScreenFade : MonoBehaviour {
             elapsed += Time.deltaTime;
             percentage = elapsed / p_fadeTime;
             canvas.alpha = Mathf.Lerp(0.0f, 1.0f, Mathf.Pow(percentage, 0.5f));
-            //Debug.Log(color);
             yield return null;
         }
         canvas.alpha = 1.0f;

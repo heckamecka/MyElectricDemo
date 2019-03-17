@@ -10,6 +10,7 @@ public class MehGameManager : MonoBehaviour {
 
     [SerializeField] private Canvas _canvas;
     [SerializeField] private ScreenFade fade;
+    [SerializeField] private AudioClip _overworldMusic;
     public AudioManager audioMan;
 
     private SaveLoad saveLoad;
@@ -36,15 +37,6 @@ public class MehGameManager : MonoBehaviour {
         }
     }
 
-    // TODO: fix this shitty way to quit the game on pc/mac
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-
-        }
-    }
-
     private void Awake()
     {
         if (privateInstance != null) { Destroy(gameObject); }
@@ -66,6 +58,13 @@ public class MehGameManager : MonoBehaviour {
         _canvas.worldCamera = Camera.main;
     }
 
+
+    // slightly hacky way to start the game for GDC
+    private void Start()
+    {
+        fade.FadeFromBlackActually(3.0f);
+        if (SceneManager.GetActiveScene().name == "_overworld") audioMan.PlayMusic(_overworldMusic, 1.0f);
+    }
 
     // Saving & Loading Files
     #region Save/Load

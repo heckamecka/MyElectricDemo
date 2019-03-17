@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Source/_menu.unity
-    guid: bab86e6c375899d40b4440cf9c4b148b
-  - enabled: 1
     path: Assets/Source/_shanty.unity
     guid: 278e8e15ecfcfe044b2efb7ef8fd2a24
   - enabled: 1
@@ -17,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Source/_overworld.unity
     guid: 726c9760d9b85a14ea0eda94c29784fd
+  - enabled: 1
+    path: Assets/Source/_menu.unity
+    guid: bab86e6c375899d40b4440cf9c4b148b
   m_configObjects: {}
