@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Sniglet-Regular
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 1721049977
   material: {fileID: 21294171698948626}
-  materialHashCode: 0
+  materialHashCode: -1110946094
   fontAssetType: 2
   m_fontInfo:
     Name: Sniglet
     PointSize: 76
-    Scale: 0
+    Scale: 1
     CharacterCount: 97
     LineHeight: 95
     Baseline: 0
     Ascender: 73
-    CapHeight: 0
+    CapHeight: 53
     Descender: -22
     CenterLine: 0
     SuperscriptOffset: 73
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 3.8
     strikethrough: 18.545454
     strikethroughThickness: 3.8
-    TabWidth: 0
+    TabWidth: 150
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 5
     y: 507
-    width: 0
-    height: 0
+    width: 15
+    height: 95
     xOffset: 0
-    yOffset: 0
+    yOffset: 73
     xAdvance: 15
     scale: 1
   - id: 33

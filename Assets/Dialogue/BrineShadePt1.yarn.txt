@@ -1,7 +1,7 @@
 title: OldStart
 tags: 
 colorID: 2
-position: -3127,-4463
+position: -842,-6046
 ---
 <<setnpc kirkwood stressed>>
 <<setspeaker kirkwood>>
@@ -13,7 +13,7 @@ Ready for a good ol fashioned {{sbopen jemison2}}stakeout?
 title: Oldjemison2
 tags: 
 colorID: 0
-position: -2883,-4220
+position: -598,-5803
 ---
 <<setface angry>>
 This is a waste of time. 
@@ -34,7 +34,7 @@ YOUNG ENOUGH TO SHOTGUN A BEER, FALL ASLEEP ON THE FLOOR, AND NOT WAKE UP WITH {
 title: Oldjemison3
 tags: 
 colorID: 0
-position: -2634,-4237
+position: -349,-5820
 ---
 <<setface grumpy>>
 Haven’t you dolts heard of the Observer Effect? 
@@ -43,7 +43,7 @@ Just observing a phenomenon necessarily changes the {{sbopen cooper4}}outcome.
 title: Oldcooper4
 tags: 
 colorID: 0
-position: -2407,-4016
+position: -122,-5599
 ---
 <<setface nervous>>
 Er, to my understanding, 
@@ -52,7 +52,7 @@ the Observer Effect mostly applies to situations <trail>involving specialized{{s
 title: Oldjemison5
 tags: 
 colorID: 0
-position: -2155,-4239
+position: 130,-5822
 ---
 <<setface angry>>
 <<shakeguppy 30>>
@@ -154,12 +154,12 @@ IF “SALT AND VINEGAR CHIPS” WAS AN EMOTION.
 title: fermi3
 tags: 
 colorID: 0
-position: -2230,-3260
+position: -2228,-3260
 ---
 <<setnpc fermi holo happy>>
 <<shakenpc 40>>
 Rise and slime, Aquaknights!!!
-{{sbopen armstrong4}}
+{{sbopen jemison4 cooper4 armstrong4}}
 <<setnpc fermi smug>>
 Another day, another municipally subsidized adventure! 
 {{sbopen armstrong4 jemison6 cooper6}}
@@ -171,7 +171,7 @@ position: -1995,-2564
 ---
 <<setface happy>>
 HIYA BOSS.
-[[fermi4]]
+[[fermi4b]]
 ===
 title: jemison6
 tags: 
@@ -189,7 +189,7 @@ position: -1514,-2808
 Yikes. You want us to look into it?
 [[fermi7]]
 ===
-title: fermi4
+title: fermi4b
 tags: 
 colorID: 0
 position: -1988,-3258
@@ -221,28 +221,42 @@ position: -1282,-3258
 ---
 What? No. 
 Oh god no, that’s all business as usual. 
-I’ve got something weirder in mind {{sbopen jemison8 cooper8 armstrong8}}for you three.
+I’ve got something else in mind for you three.
+[[LighthouseGoStart]]
 ===
-title: Node141
+title: cooper51
 tags: 
 colorID: 0
-position: -1042,-2583
+position: 770,-2811
 ---
-Empty Text
+Oh, um. 
+You’ll have to excuse our manners, we haven’t had time to choreograph an intro sequence just yet.{{sbopen jemison52 cooper52 armstrong52}}
 ===
-title: Node142
+title: jemison51
 tags: 
 colorID: 0
-position: -1043,-2809
+position: 775,-3040
 ---
-Empty Text
+“aqua” as in H20, “knight” as in shining armor
+“s” as in the sound of accidentally stepping on a snake.{{sbopen jemison52 cooper52 armstrong52}}
 ===
-title: Node143
+title: LighthouseGoStart
 tags: 
 colorID: 0
-position: -1055,-3035
+position: 292,-3253
 ---
-Empty Text
+<<setguppy none>>
+<<setnpc none>>
+<<setbg arbys>>
+The Aquaknights shamble up to the Marblue lighthouse, a surf-battered tower with a nasty slouch. 
+Wooden planter boxes crowd the walk, full of beans and things that are not beans...
+But mostly beans. 
+A gangly begoggled bot in heavy boots lounges in a lawn chair by the entryway. 
+<<setnpc kirkwood>>
+Well batter my aft and call me a cod.
+You must be Fermi’s {{sbopen jemison50 cooper50 armstrong50}}new crew. 
+
+
 ===
 title: jemisonHad
 tags: 
@@ -282,4 +296,252 @@ Hey now, chief no need to snap your cap.
 It’s me, Hadfield! The snoop with the scoop, the lorry with the story.
 <<setspeaker hadfield happy>>
 Media darling and muckraker extraordinaire!
+===
+title: jemison50
+tags: 
+colorID: 0
+position: 521,-3037
+---
+we’re the aquaknights.{{sbopen jemison51 cooper51 armstrong51}}
+===
+title: cooper50
+tags: 
+colorID: 0
+position: 521,-2808
+---
+We’re the Aquaknights!{{sbopen jemison51 cooper51 armstrong51}}
+===
+title: armstrong50
+tags: 
+colorID: 0
+position: 521,-2586
+---
+YES HELLO! WE’RE THE AQUAKNIGHTS!{{sbopen jemison51 cooper51 armstrong51}}
+===
+title: armstrong51
+tags: 
+colorID: 0
+position: 774,-2590
+---
+I WANTED TO BE CALLED “THE THREE RUSTKETEERS”
+BUT I WAS OUTNUMBERED. {{sbopen jemison52 cooper52 armstrong52}}
+===
+title: armstrong52
+tags: 
+colorID: 0
+position: 1017,-2588
+---
+ARE YOU THE... 
+UH...
+<<setspeaker none>>
+Armstrong reads the smudged writing on his hand.
+<<setguppy armstrong>> 
+LIGHTHOUSE KEEPER. BUY BATTERIES. ASK FERMI ABOUT GETTING A SWORD.
+[[kirkwood53]]
+===
+title: cooper52
+tags: 
+colorID: 0
+position: 1012,-2813
+---
+Are you the lighthouse keeper? 
+[[kirkwood53]]
+===
+title: jemison52
+tags: 
+colorID: 0
+position: 1014,-3043
+---
+are you the lighthouse keeper?
+[[kirkwood53]]
+===
+title: kirkwood53
+tags: 
+colorID: 0
+position: 1245,-3300
+---
+<<setnpc kirkwood>>
+I’m starting to suspect that IT’s the one keeping ME.
+Yeesh are there really three of you crammed in there?{{sbopen jemison54 cooper54 armstrong54}}
+...
+Er, sorry. {{sbclose}}My name's Kirkwood.{sbopen jemison55 cooper55}} 
+===
+title: jemison53
+tags: 
+colorID: 0
+position: 1245,-3043
+---
+lighthouse keeper?
+[[kirkwood53]]
+===
+title: cooper53
+tags: 
+colorID: 0
+position: 1245,-2818
+---
+...Lighthouse keeper?
+[[kirkwood53]]
+===
+title: jemison54
+tags: 
+colorID: 0
+position: 1478,-3037
+---
+um, rude. 
+[[kirkwood55]]
+===
+title: armstrong54
+tags: 
+colorID: 0
+position: 1482,-2588
+---
+WAIT, THREE??? SINCE WHE-
+OH. NEVERMIND I FORGOT TO COUNT MYSELF.
+[[kirkwood55]]
+===
+title: cooper54
+tags: 
+colorID: 0
+position: 1477,-2815
+---
+Nobody's "crammed" anywhere.
+[[kirkwood55]]
+===
+title: jemison55
+tags: 
+colorID: 0
+position: 1717,-3037
+---
+coop, armstrong, stall for me while i google this guy-
+aw fuck {{sbopen cooper56}}did i say that out loud. 
+===
+title: cooper55
+tags: 
+colorID: 0
+position: 1721,-2818
+---
+Woah woah woah hold up- Kirkwood? 
+<shake 0.8>As in, COMMANDER Kirkwood? Of the SS Shiny Boy?</shake>
+[[kirkwood57]]
+===
+title: kirkwood55
+tags: 
+colorID: 0
+position: 1713,-3287
+---
+Er, sorry. 
+My name's Kirkwood.{{sbopen jemison55 cooper55}} 
+===
+title: jemison4
+tags: 
+colorID: 0
+position: -1998,-3012
+---
+howdy boss-bot.
+[[fermi4b]]
+===
+title: cooper4
+tags: 
+colorID: 0
+position: -1996,-2787
+---
+<<setspeaker none>>
+Cooper snaps into a salute.
+<<setguppy cooper>>
+Boss!
+[[fermi4a]]
+===
+title: fermi4a
+tags: 
+colorID: 0
+position: -1985,-3494
+---
+At ease, Coop- I'm not your boss. 
+<<setnpc fermi smirk>>
+Bosses are leeches upon the great slimy hide of the Hummer workforce!!!
+...
+<<setnpc fermi shock>>
+Also bosses typically get paid.
+<<setnpc fermi smug>>
+Anyway- 
+<<setspeaker none>>
+Fermi checks their notes. Or at least pretends to. 
+[[fermi5]]
+===
+title: cooper56
+tags: 
+colorID: 0
+position: 1965,-2817
+---
+Seriously, Jem? That’s Kirkwood. THE Kirkwood! 
+<shake 0.8>Commander of the SS Shiny Boy!</shake>
+[[kirkwood57]]
+===
+title: kirkwood57
+tags: 
+colorID: 0
+position: 2175,-3305
+---
+FORMER Commander. 
+My adventuring days are behind me. Sunk with the Shiny Boy.
+<<setspeaker none>>
+Cooper is trembling slightly{{sbopen cooper58}}.
+===
+title: cooper58
+tags: 
+colorID: 0
+position: 2423,-2829
+---
+I have your trading card. <trail>Holographic foil...</trail>
+[[kirkwood59]]
+===
+title: kirkwood59
+tags: 
+colorID: 0
+position: 2689,-3303
+---
+Mmm yeah they make half-decent drink coasters{{sbopen cooper60}}.
+===
+title: cooper60
+tags: 
+colorID: 0
+position: 2980,-2830
+---
+Oh god, no! 
+I have it vacuum sealed in a commemorative binder.
+A first print Kirkwood is worth at least 10 Fermis!
+[[kirkwood61]]
+===
+title: kirkwood61
+tags: 
+colorID: 0
+position: 3224,-3315
+---
+<<setspeaker none>>
+Kirkwood coughs abruptly. 
+<<setnpc kirkwood>>
+Oh…? 
+I’ve never had a... fan...  {{sbopen jemison62 cooper62 armstrong62}}before...
+	
+===
+title: jemison62
+tags: 
+colorID: 0
+position: 3500,-3080
+---
+ah where are my manners. we should introduce{{sbopen jemison63 cooper63 armstrong63}} ourselves...
+===
+title: cooper62
+tags: 
+colorID: 0
+position: 3503,-2865
+---
+It’s a p-privilege… an HONOR to meet{{sbopen jemison63 cooper63 armstrong63}} you.
+===
+title: armstrong62
+tags: 
+colorID: 0
+position: 3504,-2647
+---
+WE SHOULD PROBABLY INTRODUCE {{sbopen jemison63 cooper63 armstrong63}}OURSELVES.
 ===

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26190b1a3c5d14946a30ca0d8e4e924d, type: 3}
-  m_Name: DemoIntroFermi
+  m_Name: BrineShadePt1
   m_EditorClassIdentifier: 
-  _sceneName: DemoIntroFermi
+  _sceneName: The Brine Shade
   _shantyText: 'soulstuff cruft and
 
     circuits frying,{{wait 1}}
@@ -26,6 +26,5 @@ MonoBehaviour:
     dismantle last,{{wait 0.5}}
 
     my electric heart.{{wait 5}} '
-  _caseDescription: gobbity goop this is placeholder description it's some good description
-    for some good slime times
-  _yarnScene: {fileID: 4900000, guid: 116137ce49048b043ab53020d14efbb8, type: 3}
+  _sceneDescription: 'A rogue slog is wreaking havoc out by the lighthouse. '
+  _yarnScene: {fileID: 4900000, guid: 4d60c248fe4e5a44bbc901ac37922f73, type: 3}

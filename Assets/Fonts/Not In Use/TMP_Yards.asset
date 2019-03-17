@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: TMP_Yards
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -330572565
   material: {fileID: 21916467490630170}
-  materialHashCode: 0
+  materialHashCode: 1144823296
   fontAssetType: 2
   m_fontInfo:
     Name: Yards
     PointSize: 128
-    Scale: 0
+    Scale: 1
     CharacterCount: 96
     LineHeight: 129
     Baseline: 0
     Ascender: 85
-    CapHeight: 0
+    CapHeight: 64
     Descender: -32
     CenterLine: 0
     SuperscriptOffset: 85
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 6.375
     strikethrough: 19.272728
     strikethroughThickness: 6.375
-    TabWidth: 0
+    TabWidth: 400
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 5
     y: 507
-    width: 0
-    height: 0
+    width: 40
+    height: 117
     xOffset: 0
-    yOffset: 0
+    yOffset: 85
     xAdvance: 40
     scale: 1
   - id: 33

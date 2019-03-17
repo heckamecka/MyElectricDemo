@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Comfortaa-Regular
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 870475577
   material: {fileID: 21998388323711428}
-  materialHashCode: 0
+  materialHashCode: 236030354
   fontAssetType: 2
   m_fontInfo:
     Name: Comfortaa
     PointSize: 69
-    Scale: 0
+    Scale: 1
     CharacterCount: 97
     LineHeight: 77
     Baseline: 0
     Ascender: 61
-    CapHeight: 0
+    CapHeight: 53
     Descender: -17
     CenterLine: 0
     SuperscriptOffset: 61
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 3.45
     strikethrough: 16
     strikethroughThickness: 3.45
-    TabWidth: 0
+    TabWidth: 200
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 5
     y: 507
-    width: 0
-    height: 0
+    width: 20
+    height: 78
     xOffset: 0
-    yOffset: 0
+    yOffset: 61
     xAdvance: 20
     scale: 1
   - id: 33

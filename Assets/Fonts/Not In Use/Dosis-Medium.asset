@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Dosis-Medium
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1955987118
   material: {fileID: 21350792863572110}
-  materialHashCode: 0
+  materialHashCode: -1962808935
   fontAssetType: 2
   m_fontInfo:
     Name: Dosis
     PointSize: 83
-    Scale: 0
+    Scale: 1
     CharacterCount: 97
     LineHeight: 105
     Baseline: 0
     Ascender: 85
-    CapHeight: 0
+    CapHeight: 60
     Descender: -20
     CenterLine: 0
     SuperscriptOffset: 85
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 2.158
     strikethrough: 23.636364
     strikethroughThickness: 2.158
-    TabWidth: 0
+    TabWidth: 160
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 5
     y: 507
-    width: 0
-    height: 0
+    width: 16
+    height: 105
     xOffset: 0
-    yOffset: 0
+    yOffset: 85
     xAdvance: 16
     scale: 1
   - id: 33

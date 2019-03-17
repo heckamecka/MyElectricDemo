@@ -14,4 +14,3 @@ MonoBehaviour:
   _locationName: Pier
   _sceneDataList:
   - {fileID: 11400000, guid: 0043849c8c4846b4d917a99147746495, type: 2}
-  - {fileID: 11400000, guid: dfba891ba10c997469ddc71313f3a4de, type: 2}
